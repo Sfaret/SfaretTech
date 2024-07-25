@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SfaretTech Visit</title>
+    <style>
+        /* Popup styles */
+        #popup {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        #popup-content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #popup iframe {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <button id="popup-button">Visit Site</button>
+
+    <div id="popup">
+        <div id="popup-content">
+            <h2>Feedback Form</h2>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7H8T2l9NdT_2e61w3Etk_SwGcupGiKDodUfTlGyF-_1YnWg/viewform?embedded=true"></iframe>
+            <button id="close-popup">Close</button> 
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const popup = document.getElementById('popup');
+            const popupButton = document.getElementById('popup-button');
+            const closePopup = document.getElementById('close-popup');
+
+            function setCookie(name, value, days) {
+                const date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                const expires = "expires=" + date.toUTCString();
+                document.cookie = name + "=" + value + ";" + expires + ";path=/";
+            }
+
+            function getCookie(name) {
+                const nameEQ = name + "=";
+                const ca = document.cookie.split(';');
+                for(let i = 0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            }
+
+            function showPopup() {
+                popup.style.display = 'flex';
+            }
+
+            function hidePopup() {
+                popup.style.display = 'none';
+            }
+
+            // Check if the user has visited today
+            const visitedToday = getCookie('visitedToday');
+            const formSubmitted = getCookie('formSubmitted');
+
+            if (!visitedToday) {
+                if (!formSubmitted) {
+                    showPopup();
+                }
+                setCookie('visitedToday', 'true', 1);
+            }
+
+            popupButton.addEventListener('click', function() {
+                if (formSubmitted) {
+                    hidePopup();
+                } else {
+                    showPopup();
+                }
+            });
+
+            closePopup.addEventListener('click', function() {
+                hidePopup();
+            });
+
+            // Handle form submission - this is a placeholder and should be replaced with actual form submission handling
+            // This example assumes the form submission sets the 'formSubmitted' cookie to 'true'
+            // You might need to use Google Forms API or a custom form submission endpoint
+            // For simplicity, we'll simulate form submission by clicking the "Close" button
+            closePopup.addEventListener('click', function() {
+                setCookie('formSubmitted', 'true', 365); // Assume form is submitted
+            });
+        });
+    </script>
+</body>
+</html>
