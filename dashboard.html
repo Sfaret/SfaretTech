@@ -1,0 +1,36 @@
+<!-- Fullsize dropdown: show if authenticated -->
+<li class="nav-item dropdown auth-visible hidden">
+    <a
+      class="nav-link dropdown-toggle"
+      href="#"
+      id="profileDropDown"
+      data-toggle="dropdown"
+    >
+      <!-- Profile image should be set to the profile picture from the id token -->
+      <img
+        alt="Profile picture"
+        class="nav-user-profile profile-image rounded-circle"
+        width="50"
+      />
+    </a>
+    <div class="dropdown-menu">
+      <!-- Show the user's full name from the id token here -->
+      <div class="dropdown-header nav-user-name user-name"></div>
+      <a
+        href="/profile"
+        class="dropdown-item dropdown-profile route-link"
+      >
+        <i class="fas fa-user mr-3"></i> Profile
+      </a>
+      <a
+        href="www.SfaretTech.com.ng"
+        class="dropdown-item"
+        id="qsLogoutBtn"
+        onclick="logout()"
+      >
+        <i class="fas fa-power-off mr-3"></i> Log out
+      </a>
+    </div>
+  </li>
+  <!-- /Fullsize dropdown -->
+</ul>
