@@ -8,7 +8,7 @@ function register(event) {
     .then((userCredential) => {
       var user = userCredential.user;
       user.updateProfile({
-        displayName: fullName
+        displayName: fullName,
       }).then(() => {
         document.getElementById('message').innerHTML = "Account created successfully!";
         setTimeout(() => {
