@@ -599,6 +599,8 @@ a:focus {
   background-color: #007fa4;
 }
 
+/*Sponsor section */
+
 /*team section */
 .team_section {
   text-align: center;
@@ -1012,3 +1014,35 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+/*homepage_button_section*/
+
+        .redirect-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 0 10px #007BFF;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .redirect-button:hover {
+            box-shadow: 0 0 20px #007BFF;
+        }
+
+        .arrow {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid #fff;
+            border-right: 2px solid #fff;
+            transform: rotate(45deg);
+            margin-left: 10px;
+        }
+ 
