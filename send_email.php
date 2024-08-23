@@ -1,25 +1,23 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars(trim($_POST["name"]));
-    $email = htmlspecialchars(trim($_POST["email"]));
-    $phone = htmlspecialchars(trim($_POST["phone"]));
-    $message = htmlspecialchars(trim($_POST["message"]));
+    // Get form data
+    $name = htmlspecialchars($_POST['name']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $service = htmlspecialchars($_POST['service']);
+    $email = htmlspecialchars($_POST['email']);
+    $message = htmlspecialchars($_POST['message']);
+    
+    // Set email variables
+    $to = "info@sfarettech.com.ng";  // Replace with your email address
+    $subject = "New Contact Form Submission";
+    $body = "Name: $name\nPhone: $phone\nService: $service\nEmail: $email\nMessage: $message";
+    $headers = "From: $email";
 
-    $to = "sfameitteam@gmail.com";
-    $subject = "New Enquiry from Website";
-    $body = "You have received a new enquiry.\n\n".
-            "Name: $name\n".
-            "Email: $email\n".
-            "Phone: $phone\n".
-            "Message:\n$message";
-    $headers = "From: info@sfarettech.com.ng"; // Update with your domain
-    "Reply-To: $email\r\n" .
-    "X-Mailer: PHP/" . phpversion()
-
+    // Send email
     if (mail($to, $subject, $body, $headers)) {
-        echo "Thank you! Your enquiry has been sent.";
+        echo "Email successfully sent.";
     } else {
-        echo "Oops! Something went wrong, please try again.";
+        echo "Failed to send email.";
     }
 } else {
     echo "Invalid request method.";

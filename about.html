@@ -131,6 +131,136 @@
   </section>
 
   <!-- end about section -->
+ <!-- Why Section -->
+<section class="why_section layout_padding">
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2>
+        Why Choose <span>Us</span>
+      </h2>
+    </div>
+    <div class="slider">
+      <div class="slides">
+        <!-- First Slide -->
+        <div class="slide">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/w1.png" alt="Virtual Expert Management">
+            </div>
+            <div class="detail-box">
+              <h5>Virtual Expert Management</h5>
+              <p>Our offerings include managing student projects/assignments, database maintenance, organizing educational events, providing virtual support to educators, developing educational materials, and streamlining administrative processes.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Second Slide -->
+        <div class="slide">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/w2.png" alt="Flexible Payment">
+            </div>
+            <div class="detail-box">
+              <h5>Flexible Payment</h5>
+              <p>Customized Solutions: Our services are tailored to meet the unique needs of educational institutions, offering flexible packages or bespoke solutions.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Third Slide -->
+        <div class="slide">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/w3.png" alt="Innovations">
+            </div>
+            <div class="detail-box">
+              <h5>Innovations</h5>
+              <p>By leveraging cutting-edge AI technology and automation, our services cater to the administrative needs of educational institutions, teachers, and educational businesses.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Fourth Slide -->
+        <div class="slide">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/w4.png" alt="Empowerment">
+            </div>
+            <div class="detail-box">
+              <h5>Empowerment</h5>
+              <p>Remote Workforce: We employ skilled virtual assistants proficient in administrative tasks and adept at using cutting-edge technologies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-box">
+      <a href="#">
+        Read More
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Add your CSS and JavaScript -->
+<style>
+  .slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    min-width: 50%;
+    box-sizing: border-box;
+  }
+
+  .box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: #f3f2f7;
+    margin: 20px;
+  }
+
+  .img-box img {
+    max-width: 50%;
+  }
+
+  .heading_container {
+    margin-bottom: 30px;
+  }
+
+  .btn-box {
+    text-align: center;
+    margin-top: 20px;
+  }
+</style>
+
+<script>
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+
+    if (index >= totalSlides) {
+      currentIndex = 0;
+    } else if (index < 0) {
+      currentIndex = totalSlides - 1;
+    } else {
+      currentIndex = index;
+    }
+
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  setInterval(() => {
+    showSlide(currentIndex + 1);
+  }, 5000); // Change slide every 10 seconds
+</script>
+<!-- End Why Section -->
 
   <!-- info section -->
 

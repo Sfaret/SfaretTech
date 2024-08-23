@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <!-- Basic -->
   <meta charset="utf-8" />
@@ -16,29 +15,6 @@
   <title> SfaretTechnologies </title>
   <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js"></script>
-  <script>
-      var firebaseConfig = {
-          apiKey: "AIzaSyB1ukq-2QYRRfU4_UskNAAdivWSXKqZbWQ",
-  authDomain: "sfaret-login.firebaseapp.com",
-  projectId: "sfaret-login",
-  storageBucket: "sfaret-login.appspot.com",
-  messagingSenderId: "974930877645",
-  appId: "1:974930877645:web:a061cf07040ebf4fa19d84",
-  measurementId: "G-5EL0XNYEB7"
-};
-firebase.initializeApp(firebaseConfig);
-firebase.auth().onAuthStateChange(function(user) {
-  if (!user) {
-    window.location.href = 'index.html'
-  }
-});
-
-function logout() {
-  firebase.auth().signOut(). then(function() {
-    window.location.href = 'index.html';
-  })
-}
-</script>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -57,6 +33,8 @@ function logout() {
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <!--Bullon_Icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
@@ -106,7 +84,7 @@ function logout() {
             
     
 
-            
+  
               </li>
               <form class="form-inline">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
@@ -129,8 +107,8 @@ function logout() {
                 <div class="col-md-6 ">
                   <div class="detail-box">
                     <h1>
-                      Edu <br>
-                      Technology
+                    Edu <br>
+                    Technology
                     </h1>
                     <p>
                       We utilize secure, cloud-based solutions for data storage, accessibility, and collaborative work. Additionally, we employ various virtual communication tools like video conferencing, messaging apps, and project management software.
@@ -216,214 +194,521 @@ function logout() {
     <!-- end slider section -->
   </div>
 
-
-  <!-- service section -->
-
-  <section class="service_section layout_padding">
-    <div class="service_container">
-      <div class="container ">
-        <div class="heading_container heading_center">
-          <h2>
-            Our <span>Services</span>
-          </h2>
-          <p>
-            Cutting-edge, user-friendly AI Edu-Tech tool and growth analytics designed to boost user conversion, engagement, and retention.
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-md-4 ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/s.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Web Application
-                </h5>
-                <p>
-                  Build the way that works best for you with support for all your go-to integrations, including Azuma Ai, S-Tips, and more.
-                  
-          
-                </p>
-                <a href="">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/sc.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Automation ChatBot
-                </h5>
-                <p>
-                  Step up your code quality with code review tools that fit right into your workflow. such as AI chatgpt and automation.
-                  
-                  
-                </p>
-                <a href="">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/s3.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Virtual Assistance Support
-                </h5>
-                <p>
-                  Seamlessly update permissions and add new users as you build, digital Team help on workspace.
-                
-                  
-                </p>
-                <a href="">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="btn-box">
-          <a href="">
-            View All
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end service section -->
-
-
   <!-- about section -->
-
-  <section class="about_section layout_padding">
-    <div class="container  ">
-      <div class="heading_container heading_center">
-        <h2>
-          About <span>Us</span>
-        </h2>
-        <p>
-          We are 
-Building the best AI Edu-Tech 
-
-in Africa and Abroad.
-        </p>
-      </div>
-      <div class="row">
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="images/sp1 (6).png" alt="">
-          </div>
+<section class="about_section layout_padding">
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2>
+        Our Problems and <span>Solution</span>
+      </h2>
+      <p>
+        We are building the best AI Edu-Tech in Africa and Abroad.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="img-box">
+          <img src="images/problem statement.png" alt="Problem Statement" class="equal-image">
         </div>
-        <div class="col-md-6">
-          <div class="detail-box">
-            <h3>
-              We Are Sfaret
-            </h3>
-            <p>
-              SFARET Technologies is an innovative startups specializing in education assistance to help students in the education sector. SFARET Technologies is dedicated to offering advanced education assistant solutions specifically designed, our idea is by leveraging cutting-edge AI technology and automation chatbot, our services cater to the administrative needs of educational institutions, teachers, and educational works. Our offerings include Applications that can manage student project/studies, organizing educational events, providing virtual support to educators, developing educational materials, and streamlining administrative processes.
-              our goal is to revolutionize administrative support services through AI-driven solutions.
-
-            </p>
-            <p>
-              
-            </p>
-            <a href="">
-              Sign Up
-            </a>
-          </div>
+      </div>
+      <div class="col-md-6">
+        <div class="detail-box">
+          <h3>
+            
+          </h3>
+          <img src="images/solution.png" alt="Solution Image" class="equal-image">
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+<!-- CSS -->
+<style>
+  .equal-image {
+    width: 100%; /* Responsive width */
+    height: 400px; /* Fixed height */
+    object-fit: cover; /* Ensures the image fits within the box without distortion */
+  }
+  
+  @media (max-width: 768px) {
+    .equal-image {
+      height: 300px; /* Adjust height for smaller screens */
+    }
+  }
+</style>
+<!-- end about section -->
 
-  <!-- end about section -->
+<!--EduTech Into_Section-->
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-  <!-- why section -->
+        .section-page {
+            background: url('background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            padding: 50px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-  <section class="why_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Why Choose <span>Us</span>
-        </h2>
+        .content {
+            background: rgb(3, 14, 63);
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            color: rgb(246, 246, 247);
+            border-radius: 8px;
+            padding: 20px;
+            width: calc(50% - 20px);
+            box-shadow: 0px 4px 8px rgba(16, 14, 163, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 16px rgba(4, 10, 99, 0.993);
+        }
+
+        .card h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 30px;
+        }
+          /* Join Us Section */
+          #join-us-section {
+          text-align: center;
+          padding: 50px;
+          background-color: #0b2ef5;
+          }
+
+          #join-us-section h2 {
+           font-size: 2em;
+          margin-bottom: 20px;
+        }   
+
+          #join-us-section p {
+          font-size: 1.2em;
+          margin-bottom: 10px;
+          }
+            .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+        
+        }
+
+        .join-button:hover, .next-button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="section-page">
+        <div class="content">
+            <h1>How Goal In Education Ecosystem</h1>
+            <div class="cards-container">
+                <div class="card">
+                    <h2>AI in Education</h2>
+                    <p>Artificial Intelligence (AI) is revolutionizing the education sector by providing personalized learning experiences, automating administrative tasks, and enabling data-driven insights. AI tools help educators understand student performance better and tailor instruction to individual needs.</p>
+                </div>
+                <div class="card">
+                    <h2>AI in Edu-Tech</h2>
+                    <p>In the Edu-Tech landscape, AI is enhancing educational technology with features such as intelligent tutoring systems, adaptive learning platforms, and automated content generation. These advancements are making learning more accessible and efficient, bridging gaps in education.</p>
+                </div>
+            </div>
+            <section id="join-us-section">
+            <h2>Join Us</h2>
+            <p>Be part of our growing community. Join us and help shape the future.</p>
+            <a href="" class="btn">Join Now</a>
+        </section>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<!--End_edutech intro_Section-->
+
+<!--Edutech_Youtubevideo_section-->
+<head>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <style>
+    /* Basic styling for the video slider */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .video-slider {
+      width: 100%;
+      max-width: 800px;
+      margin: 50px auto;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: auto;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .swiper-slide iframe {
+      width: 100%;
+      height: 315px;
+    }
+
+    /* Swiper navigation buttons */
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<section class="video-slider">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <iframe src="https://www.youtube.com/embed/SSuAvSniOAw?si=VIl8pOhAcwRHg84K" 
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
-      <div class="why_container">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/w1.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Virtual Expert Management
-            </h5>
-            <p>
-              Our offerings include managing student project/assignment, database maintenance, organizing educational events, providing virtual support to educators, developing educational materials, and streamlining administrative processes.
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/w2.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Flexible Payment
-            </h5>
-            <p>
-              Customized Solutions: Our services are tailored to meet the unique needs of educational institutions, offering flexible packages or bespoke solutions.
-              
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/w3.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Innovations
-            </h5>
-            <p>
-              By leveraging cutting-edge AI technology and automation, our services cater to the administrative needs of educational institutions, teachers, and educational businesses.
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/w4.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Empowerment
-            </h5>
-            <p>
-              Remote Workforce: We employ skilled virtual assistants proficient in administrative tasks and adept at using cutting-edge technologies.
-              
-            </p>
-          </div>
-        </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <iframe src="https://www.youtube.com/embed/kJXSPeDuBYI?si=o0WNXiyecvLjjYWW" 
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
-      <div class="btn-box">
-        <a href="">
-          Read More
-        </a>
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <iframe src="https://www.youtube.com/embed/uIxK_RHv4FA?si=CBgMmTEn7GLdspXZ" 
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
-  </section>
+    <!-- Pagination and Navigation -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
 
-  <!-- end why section -->
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,  // Show only one video at a time
+    spaceBetween: 30,
+    autoplay: {
+      delay: 5000,  // Slides change every 5 seconds
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
 
+</body>
+</html>
+<!--End_Edutech_Youtubevideo_section-->
+
+<!--Announcement_Section-->
+<head>
+    <style>
+        /* Announcement Section */
+        .announcement-section {
+            position: relative, center;
+            width: 100%;
+            overflow: hidden;
+            background: transparent;
+        }
+
+        .announcement-slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .announcement-card {
+            min-width: 300px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #f4f4f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .announcement-card h4 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .official {
+            background-color: #ffeb3b;
+        }
+
+        .announcement-icon {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .announcement-icon i {
+            font-size: 20px;
+        }
+
+        .notification-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: red;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 50%;
+            font-size: 12px;
+        }
+
+        /* Ensure that the background and layout of the website remains intact */
+        body {
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="announcement-section">
+        <div class="announcement-slider" id="announcementSlider">
+            <div class="announcement-card official">
+                <h4>Official Announcement</h4>
+                <p>Big news! We will be launched a new feature soon!!.
+                        Wait....
+                </p>
+            </div>
+            <div class="announcement-card">
+                <h4>General Announcement</h4>
+                <p>Stay tuned for upcoming events.</p>
+            </div>
+            <!-- Add more announcements here -->
+            
+        </div>
+    </div>
+
+    <div class="announcement-icon" id="announcementIcon">
+        <i class="fas fa-bullhorn"></i>
+        <span class="notification-count" id="notificationCount">1</span>
+    </div>
+
+    <script>
+        const slider = document.getElementById("announcementSlider");
+        const icon = document.getElementById("announcementIcon");
+        const notificationCount = document.getElementById("notificationCount");
+
+        let currentSlide = 0;
+        const totalSlides = slider.children.length;
+
+        function slideNext() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function updateNotificationCount() {
+            const officialAnnouncements = document.querySelectorAll('.official');
+            notificationCount.textContent = officialAnnouncements.length;
+            if (officialAnnouncements.length === 0) {
+                notificationCount.style.display = 'none';
+            }
+        }
+
+        icon.addEventListener("click", () => {
+            document.querySelector(".announcement-section").scrollIntoView({ behavior: "smooth" });
+        });
+
+        setInterval(slideNext, 3000);
+        updateNotificationCount();
+    </script>
+
+</body>
+</html>
+<!--End_Announcement_Section-->
+
+<!--Portfolio&Whitepaper-->
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light background for other pages */
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin-top: 50px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .portfolio-section {
+            background: linear-gradient(to right, #f4f7f8, #150e3d, #2f2e5e);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .portfolio-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .portfolio-section p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .portfolio-content {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: #1C1C1C;
+            border-radius: 10px;
+            padding: 20px;
+            width: 45%;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .card h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        .card p {
+            font-size: 1em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .card a:hover {
+            background: #2980b9;
+        }
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            background: #0F2027;
+            color: white;
+            text-align: center;
+        }
+        footer p {
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sfaret Technologies Edu-Tech Startup</h1>
+    <p>Innovating education through cutting-edge software and AI technology. Discover our portfolio and download our white paper to learn more about our vision and how we're revolutionizing the industry.</p>
+</header>
+
+<section class="portfolio-section">
+    <h1>Portfolio & White Paper</h1>
+    <p>Explore the projects we've developed and the impact we've made in the edu-tech space. Learn about the research and technology behind our innovations.</p>
+    <div class="portfolio-content">
+        <div class="card">
+            <h2>Our Portfolio</h2>
+            <p>Explore the projects we've developed and the impact we've made in the edu-tech space. Our portfolio showcases our dedication to providing innovative solutions for modern education.</p>
+            <a href="#">Download Portfolio</a>
+        </div>
+        <div class="card">
+            <h2>White Paper</h2>
+            <p>Learn about the research and technology behind our innovations. Our white paper details the strategies we employ to push the boundaries of educational technology.</p>
+            <a href="#">Download White Paper</a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
+<!--End_Portfolio&Whitepaper-->
+  
   <!-- Sponsor section -->
   <!DOCTYPE html>
   <html lang="en">
@@ -527,64 +812,6 @@ in Africa and Abroad.
       </a>
   </body>
   </html>  
-<!-- contact section -->
-<section class="contact_section ">
-  <div class="container-fluid">
-
-    <div class="row">
-      <div class="col-md-6 px-0">
-        <div class="img-box ">
-          <img src="images/contact-img2.png" class="box_img" alt="about img">
-    
-        </div>
-      </div>
-      <div class="col-md-5 mx-auto">
-        <div class="form_container">
-        <form action="send_email.php" method="post"></form>
-          <div class="heading_container heading_center">
-            <h2>Get In Touch</h2>
-          </div>
-          <form action="">
-            <div class="form-row">
-              <div class="form-group col">
-                <input type="text" class="form-control" placeholder="Your Name" required />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col-lg-6">
-                <input type="text" class="form-control" placeholder="Phone Number" required />
-              </div>
-              <div class="form-group col-lg-6">
-                <select name="" id="" class="form-control wide">
-                  <option value="">Select Service</option>
-                  <option value="">Enquiries</option>
-                  <option value="">Technical Issues</option>
-                  <option value="">Application Error</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col">
-                <input type="email" class="form-control" placeholder="Email" required  />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group col">
-                <input type="text" class="message-box form-control" placeholder="Message" required />
-              </div>
-            </div>
-            <div class="btn_box">
-              <button>
-                SEND
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- end contact section -->
 
   <!-- info section -->
 
