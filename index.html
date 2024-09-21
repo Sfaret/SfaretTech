@@ -15,6 +15,7 @@
   <title> SfaretTechnologies </title>
   <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js"></script>
+  <script src="feedback popup.html"></script>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -456,6 +457,127 @@
 </script>
 <!-- End of Announcement Section -->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Reasons</title>
+    <style>
+        /* Isolating the section by using unique class names */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+         
+        .investment-section {
+            background-color: #ffffff;
+            padding: 50px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .card-body {
+            padding: 20px;
+            color: #555;
+            font-size: 1em;
+        }
+
+        .card-body p {
+            margin: 0;
+        }
+  
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Wrapping the entire section to prevent affecting other parts of the webpage -->
+     <section class="investment-section">
+      <div class="container">
+          <h2>Why Invest in Our Company?</h2>
+          <div class="card-container">
+              <div class="card">
+                  <div class="card-header">Innovative Technology and Market Edge</div>
+                  <div class="card-body">
+                      Investing in our company means supporting cutting-edge technology in the educational sectors. Our solutions leverage AI and advanced tech to revolutionize learning and Administrative Management, giving us a significant competitive advantage.
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card-header">Strong Market Demand</div>
+                  <div class="card-body">
+                      There is a growing need for effective educational tools and efficient Edu-Tech. By investing now, you position yourself to benefit from this expanding market, where our unique offerings are poised to meet and exceed current demands.
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card-header">Early Investor Benefits</div>
+                  <div class="card-body">
+                      Participating in our presale crowdfunding offers exclusive early-bird benefits. This includes preferential pricing on shares, which can significantly increase in value as our company grows and scales.
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card-header">Experienced Team and Proven Vision</div>
+                  <div class="card-body">
+                      Our team consists of industry experts with a proven track record in technology and Edu-Tech innovation. Investing in our company means backing a team that is committed to executing a clear and ambitious vision.
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card-header">Social Impact and Value Creation</div>
+                  <div class="card-body">
+                      By investing in our company, you contribute to meaningful social impact. Our products aim to improve educational outcomes, creating positive changes in people's lives and fostering community development.
+                  </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
 <!-- Portfolio/Whitepaper Section -->
 <section class="portfolio-section">
     <h1>Portfolio & White Paper</h1>
@@ -464,12 +586,12 @@
         <div class="card">
             <h2>Our Portfolio</h2>
             <p>Explore the projects we've developed and the impact we've made in the edu-tech space. Our portfolio showcases our dedication to providing innovative solutions for modern education.</p>
-            <a href="#">Download Portfolio</a>
+            <a href="c:\Users\SFARET TECHNOLOGIES\Desktop\SF PROJECT 2\SFARET TECHNOLOGIES Inc\SFARET MARKETING\Sfaret Company Profile.pdf">Download Portfolio</a>
         </div>
         <div class="card">
             <h2>White Paper</h2>
             <p>Learn about the research and technology behind our innovations. Our white paper details the strategies we employ to push the boundaries of educational technology.</p>
-            <a href="#">Download White Paper</a>
+            <a href="c:\Users\SFARET TECHNOLOGIES\Desktop\SF PROJECT 2\SFARET TECHNOLOGIES Inc\SFARET MARKETING\SFARET Whitepaper VS 1.1 (full).pdf">Download White Paper</a>
         </div>
     </div>
 </section>
@@ -548,8 +670,8 @@
             color: #7f8c8d;
         }
 </style>
-<!-- End of Portfolio/Whitepaper Section -->
-  
+<!-- End of Portfolio/Whitepaper Section -->  
+
   <!-- Sponsor section -->
   <!DOCTYPE html>
   <html lang="en">
@@ -719,6 +841,9 @@
               <a class="active" href="index.html">
                 Home
               </a>
+              <a class="" href="presale calculator.html">
+                Presale Calculator
+              </a>
               <a class="" href="http://www.sfaretedu.com.ng">
                 SfaretEdu
               </a>
@@ -761,115 +886,6 @@
     </div>
   </section>
   <!-- footer section -->
-
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SfaretTech Visit</title>
-    <style>
-        /* Popup styles */
-        #popup {
-            display: none;
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            justify-content: center;
-            align-items: center;
-        }
-        #popup-content {
-            background: white;
-            padding: 20px;
-            border-radius: 5px;
-            text-align: center;
-        }
-        #popup iframe {
-            width: 100%;
-            height: 400px;
-        }
-    </style>
-</head>
-<body>
-    <button id="popup-button">Visit Site</button>
-
-    <div id="popup">
-        <div id="popup-content">
-            <h2>Feedback Form</h2>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7H8T2l9NdT_2e61w3Etk_SwGcupGiKDodUfTlGyF-_1YnWg/viewform?embedded=true"></iframe>
-            <button id="close-popup">Close</button> 
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const popup = document.getElementById('popup');
-            const popupButton = document.getElementById('popup-button');
-            const closePopup = document.getElementById('close-popup');
-
-            function setCookie(name, value, days) {
-                const date = new Date();
-                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                const expires = "expires=" + date.toUTCString();
-                document.cookie = name + "=" + value + ";" + expires + ";path=/";
-            }
-
-            function getCookie(name) {
-                const nameEQ = name + "=";
-                const ca = document.cookie.split(';');
-                for(let i = 0; i < ca.length; i++) {
-                    let c = ca[i];
-                    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-                    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
-                }
-                return null;
-            }
-
-            function showPopup() {
-                popup.style.display = 'flex';
-            }
-
-            function hidePopup() {
-                popup.style.display = 'none';
-            }
-
-            // Check if the user has visited today
-            const visitedToday = getCookie('visitedToday');
-            const formSubmitted = getCookie('formSubmitted');
-
-            if (!visitedToday) {
-                if (!formSubmitted) {
-                    showPopup();
-                }
-                setCookie('visitedToday', 'true', 1);
-            }
-
-            popupButton.addEventListener('click', function() {
-                if (formSubmitted) {
-                    hidePopup();
-                } else {
-                    showPopup();
-                }
-            });
-
-            closePopup.addEventListener('click', function() {
-                hidePopup();
-            });
-
-            // Handle form submission - this is a placeholder and should be replaced with actual form submission handling
-            // This example assumes the form submission sets the 'formSubmitted' cookie to 'true'
-            // You might need to use Google Forms API or a custom form submission endpoint
-            // For simplicity, we'll simulate form submission by clicking the "Close" button
-            closePopup.addEventListener('click', function() {
-                setCookie('formSubmitted', 'true', 365); // Assume form is submitted
-            });
-        });
-    </script>
-</body>
-</html>
 
   <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
