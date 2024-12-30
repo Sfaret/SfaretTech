@@ -1,12 +1,18 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get form data
-    $name = htmlspecialchars($_POST['name']);
-    $phone = htmlspecialchars($_POST['phone']);
-    $service = htmlspecialchars($_POST['service']);
-    $email = htmlspecialchars($_POST['email']);
-    $message = htmlspecialchars($_POST['message']);
-    
+    // Sanitize and validate input
+    $name = htmlspecialchars(trim($_POST['name']));
+    $phone = htmlspecialchars(trim($_POST['phone']));
+    $service = htmlspecialchars(trim($_POST['service']));
+    $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
+    $message = htmlspecialchars(trim($_POST['message']));
+
+    // Validate email
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format.";
+        exit;
+    }
+
     // Set email variables
     $to = "info@sfarettech.com.ng";  // Replace with your email address
     $subject = "New Contact Form Submission";

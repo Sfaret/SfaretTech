@@ -384,34 +384,6 @@
 </script>
 
 <!-- Announcement Section -->
-<section class="announcement-section">
-  <div class="container">
-    <h2>Announcements</h2>
-    <div class="announcement-slider">
-      <div class="announcement-item">
-        <h3>Announcement 1</h3>
-        <p>Big news! We will be launched a new feature soon!!.
-          Wait....</p>
-      </div>
-      <div class="announcement-item">
-        <h3>Announcement 2</h3>
-        <p>Stay tuned for upcoming events by following us on Social Media via 
-          <i class="fa fa-facebook" aria-hidden="true"></i> 
-          <i class="fa fa-twitter" aria-hidden="true"></i> 
-          <i class="fa fa-youtube" aria-hidden="true"></i>  
-        </p>
-      </div>
-      <div class="announcement-item">
-        <h3>Announcement 3</h3>
-        <p>Whitepaper and Presales Shares and Investment Funding coming soon...
-          wait for update.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CSS for Announcement Section -->
 <style>
   .announcement-section {
     background-color: #f8f9fa;
@@ -438,27 +410,79 @@
     font-size: 18px;
     font-weight: bold;
   }
+
+  /* Style for SNS logo images */
+  .announcement-item img {
+    width: 48px;      /* Set the size of the logos */
+    height: 48px;     /* Set the height */
+    margin: 0 15px;   /* Space between images */
+    cursor: pointer;  /* Pointer cursor to indicate clickability */
+  }
+
+  .announcement-item a {
+    display: inline-block;
+  }
+
+  .announcement-item a:hover img {
+    opacity: 0.8;  /* Add a hover effect to the logos */
+  }
 </style>
+</head>
+<body>
+
+<!-- Announcement Section -->
+<section class="announcement-section">
+<div class="container">
+  <h2>Announcements</h2>
+  <div class="announcement-slider">
+    <div class="announcement-item">
+      <h3>Announcement 1</h3>
+      <p>Big news! We will be launching a new feature soon!! Wait....</p>
+    </div>
+    <div class="announcement-item">
+      <h3>Announcement 2</h3>
+      <p>Stay tuned for upcoming events by following us on Social Media via 
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Facebook_Logo_2023.png" alt="Facebook Logo">
+        </a> 
+        <a href="https://twitter.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Twitter_Logo_2021.svg" alt="Twitter Logo">
+        </a> 
+        <a href="https://www.youtube.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Logo">
+        </a>
+      </p>
+    </div>
+    <div class="announcement-item">
+      <h3>Announcement 3</h3>
+      <p>Whitepaper and Presales Shares and Investment Funding coming soon... wait for update.</p>
+    </div>
+  </div>
+</div>
+</section>
 
 <!-- JS for Announcement Section -->
 <script>
-  var currentIndex = 0;
-  var announcements = document.querySelectorAll('.announcement-item');
-  var announcementCount = announcements.length;
+var currentIndex = 0;
+var announcements = document.querySelectorAll('.announcement-item');
+var announcementCount = announcements.length;
 
-  function showAnnouncement(index) {
-    announcements.forEach((item, idx) => {
-      item.style.display = idx === index ? 'block' : 'none';
-    });
-  }
+function showAnnouncement(index) {
+  announcements.forEach((item, idx) => {
+    item.style.display = idx === index ? 'block' : 'none';
+  });
+}
 
-  function nextAnnouncement() {
-    currentIndex = (currentIndex + 1) % announcementCount;
-    showAnnouncement(currentIndex);
-  }
+function nextAnnouncement() {
+  currentIndex = (currentIndex + 1) % announcementCount;
+  showAnnouncement(currentIndex);
+}
 
-  setInterval(nextAnnouncement, 5000); // 5 seconds interval
+setInterval(nextAnnouncement, 5000); // 5 seconds interval
 </script>
+
+</body>
+</html>
 <!-- End of Announcement Section -->
 
 <!DOCTYPE html>
@@ -909,6 +933,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </body>
 </html>
