@@ -285,28 +285,25 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div class="video-card">
-          <video controls>
-            <source src="images/video1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/kJXSPeDuBYI?si=u-0fslTZGJUQOvMk?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
           <h3>AI-Powered Solutions</h3>
         </div>
       </div>
       <div class="swiper-slide">
         <div class="video-card">
-          <video controls>
-            <source src="images/video2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/SSuAvSniOAw?si=Ww7AHN36jGIWhFts?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
           <h3>Revolutionizing Education</h3>
         </div>
       </div>
       <div class="swiper-slide">
         <div class="video-card">
-          <video controls>
-            <source src="images/video3.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/uIxK_RHv4FA?si=zsQbn1OjVzSOFw_D?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
           <h3>Future of Learning</h3>
         </div>
       </div>
@@ -350,9 +347,20 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
 
-  video {
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 10px;
   }
 
@@ -372,12 +380,8 @@
       prevEl: '.swiper-button-prev',
     },
     loop: true, // Enable looping of slides
-    // autoplay: {   // Autoplay removed to cancel automatic sliding
-    //   delay: 5000, // 5 seconds
-    // },
   });
 </script>
-<!-- End of Video Slider -->
 
 <!-- Announcement Section -->
 <section class="announcement-section">
