@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> SfaretTechnologies </title>
+  <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js"></script>
+  <script src="feedback popup.html"></script>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <!--Bullon_Icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              SFARET
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="main.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="team.html">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+              </li>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <title>Legal Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 20px;
+        }
+        .menu button {
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .menu button.active {
+            background: #ff9800;
+        }
+        .content {
+            padding: 10px;
+            color: #333;
+            white-space: pre-line;
+        }
+        .home-btn {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .home-btn:hover {
+            background: #388e3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <button onclick="showContent('AML')" class="active" id="AML-btn">AML</button>
+            <button onclick="showContent('KYC')" id="KYC-btn">KYC</button>
+            <button onclick="showContent('LegalPolicy')" id="LegalPolicy-btn">Legal Policy</button>
+        </div>
+        <div class="content" id="content">
+            <h2>Anti-Money Laundring (AML) Policy</h2>
+            <h3>Sfaret Technologies</h3>
+            <h4>1. Introduction</h4>
+
+            SFARET TECHNOLOGIES is committed to preventing money laundering, terrorist financing, and fraudulent financial activities. This Anti-Money Laundering (AML) Policy establishes the framework for compliance with Nigerian AML laws, ensuring that our platform is not used for illicit financial activities.
+          
+          
+            2. <b>AML Policy Overview</b>
+
+            This policy outlines the responsibilities and measures that SFARET TECHNOLOGIES undertakes to detect, prevent, and report suspicious financial transactions in compliance with relevant Nigerian and international AML regulations.
+            2.1 Objectives
+
+            •	To prevent the use of SFARET TECHNOLOGIES' platform for money laundering and terrorist financing.
+
+            •	To establish a robust monitoring system for detecting suspicious activities.
+
+            •	To ensure compliance with Nigerian AML laws and international financial regulations.
+
+            •	To cooperate with law enforcement agencies such as the Economic and Financial Crimes Commission (EFCC) and the Nigerian Financial Intelligence Unit (NFIU).
+          
+            2.2 <b>Regulatory Compliance</b>
+
+            SFARET TECHNOLOGIES complies with the following Nigerian AML laws and guidelines:
+
+            •	Money Laundering (Prohibition) Act, 2022
+
+            •	CBN AML/CFT Regulations, 2022
+
+            •	Nigerian Financial Intelligence Unit (NFIU) Guidelines
+
+            •	Economic and Financial Crimes Commission (EFCC) Regulations
+
+            •	Financial Action Task Force (FATF) Recommendations
+            
+            3. <b>Transaction Monitoring & Reporting</b>
+
+            3.1 Suspicious Transaction Monitoring
+
+            SFARET TECHNOLOGIES employs both automated and manual transaction monitoring systems to detect suspicious activities. Red flags include:
+
+            •	Transactions inconsistent with a customer’s profile.
+
+            •	Multiple high-value transactions within a short period.
+
+            •	Payments linked to high-risk jurisdictions.
+
+            •	Transactions involving unverified third parties or cryptocurrency wallets.
+
+            •	Large cash deposits or withdrawals that do not match the customer’s financial profile.
+
+            •	Use of false or stolen identities to open accounts.
+
+            3.2 <b>Reporting Obligations</b>
+
+            •	Suspicious Activity Reports (SARs): Any suspicious transactions must be reported to the Nigerian Financial Intelligence Unit (NFIU).
+
+            •	Currency Transaction Reports (CTRs): Transactions exceeding CBN-set reporting thresholds must be documented and reported.
+
+            •	Record Keeping: All customer data and transaction records must be maintained for a minimum of 5 years, as required by CBN AML/CFT Regulations.
+
+            •	Compliance Officer: A designated AML Compliance Officer (AMLCO) oversees compliance, audits, and regulatory reporting.
+            
+            4. <b>Employee Training & Policy Enforcement</b>
+
+            •	Employees must undergo regular AML training to understand compliance responsibilities.
+
+            •	Internal controls, including whistleblower policies, are enforced to prevent unauthorized financial activities.
+
+            •	SFARET TECHNOLOGIES adopts a zero-tolerance policy for violations, which may result in disciplinary action or legal consequences.
+
+            •	The company ensures compliance with Enhanced Due Diligence (EDD) measures for high-risk customers, including Politically Exposed Persons (PEPs) and businesses in sensitive industries.
+            
+            5. <b>Conclusion</b>
+
+            SFARET TECHNOLOGIES is committed to ensuring the integrity of its financial ecosystem. This AML Policy is designed to maintain compliance with Nigerian financial laws, prevent illicit activities, and uphold global AML standards. All stakeholders, including employees, customers, and partners, are expected to adhere strictly to this policy to safeguard the financial system and protect the reputation of SFARET TECHNOLOGIES.
+            
+            
+
+        </div>
+        <button class="home-btn" onclick="goHome()">Back to Home</button>
+    </div>
+
+    <script>
+        function showContent(section) {
+            const sections = {
+                AML: `<h2>ANTI-MONEY LAUNDERING (AML) POLICY</h2>
+                      <h3>SFARET TECHNOLOGIES</h3>
+                      <h4>1. Introduction</h4>
+                      SFARET TECHNOLOGIES is committed to preventing money laundering, terrorist financing, and fraudulent financial activities...
+                      <h4>2. AML Policy Overview</h4>
+                      This policy outlines the responsibilities and measures that SFARET TECHNOLOGIES undertakes to detect, prevent, and report suspicious financial transactions...
+                      <h4>3. Transaction Monitoring & Reporting</h4>
+                      SFARET TECHNOLOGIES employs both automated and manual transaction monitoring systems to detect suspicious activities...
+                      <h4>4. Employee Training & Policy Enforcement</h4>
+                      Employees must undergo regular AML training to understand compliance responsibilities...
+                      <h4>5. Conclusion</h4>
+                      SFARET TECHNOLOGIES is committed to ensuring the integrity of its financial ecosystem...`,
+                KYC: `<h2>Know Your Customer (KYC) Policy</h2>
+                      <p><b>KYC/CDD PROCEDURES</b>
+1. <b>Introduction</b>
+
+Know Your Customer (KYC) and Customer Due Diligence (CDD) procedures are essential in preventing fraudulent activities, ensuring regulatory compliance, and protecting SFARET TECHNOLOGIES from financial crimes. These procedures align with Nigerian financial regulations, including the Central Bank of Nigeria (CBN) AML/CFT Regulations, Money Laundering (Prohibition) Act, 2022, and Nigerian Financial Intelligence Unit (NFIU) Guidelines.
+
+2. <b>Customer Identification Process (CIP)</b>
+
+Before onboarding any customer, SFARET TECHNOLOGIES conducts a thorough KYC verification process, which includes:
+
+1.	Individual Customers: Verification through a government-issued ID (e.g., National Identification Number (NIN), passport, driver’s license, or voter’s card), Bank Verification Number (BVN), and proof of address (utility bill, bank statement, or tax document).
+
+2.	Corporate Customers: Verification of Corporate Affairs Commission (CAC) registration, Tax Identification Number (TIN), ownership structure, and identification of beneficial owners.
+
+3.	Enhanced Due Diligence (EDD): Additional checks for high-risk individuals or entities, such as Politically Exposed Persons (PEPs), businesses in cash-intensive industries, or transactions involving high-risk jurisdictions.
+
+
+3. <b>Risk-Based Approach</b>
+
+Customers are categorized based on their risk level:
+
+•	Low Risk: Regular users with verified identities making small transactions.
+
+•	Medium Risk: Frequent users with larger transactions or corporate accounts with moderate risk exposure.
+
+•	High Risk: Users flagged for unusual activity, high-value transactions, foreign transactions, or connections to high-risk countries or industries.
+
+
+4. <b>Ongoing Monitoring</b>
+
+•	Continuous tracking of transactions using automated systems to detect anomalies.
+
+•	Cross-referencing with NFIU watchlists and sanction lists.
+
+•	Periodic review and re-verification of customer information to ensure ongoing compliance.
+
+•	Flagging and escalating suspicious transactions for further investigation.
+
+
+5. <b>Reporting Obligations</b>
+
+•	Suspicious Activity Reports (SARs): Any suspicious transactions must be reported to the Nigerian Financial Intelligence Unit (NFIU) and, where necessary, the Economic and Financial Crimes Commission (EFCC).
+
+•	Currency Transaction Reports (CTRs): Any transaction exceeding CBN-set limits must be reported.
+
+•	Record Keeping: All customer data and transaction records are maintained for a minimum of 5 years, as required by Nigerian financial regulations.
+
+•	Compliance Officer: A designated AML Compliance Officer (AMLCO) oversees KYC/CDD compliance, regulatory reporting, and employee training on AML/CFT obligations.
+
+
+6. <b>Conclusion</b>
+
+SFARET TECHNOLOGIES remains committed to implementing robust KYC/CDD procedures in line with Nigerian financial regulations, ensuring transparency, security, and full compliance with local and international anti-money laundering standards.
+
+.</p>`,
+                LegalPolicy: `<h2>Legal Policy</h2>
+                              <p>LEGAL POLICY 
+
+<b>Terms of Service</b>
+
+Welcome to [Sfaret Technologies]! By accessing or using our website, you agree to comply with and be bound by these terms and conditions ("Terms"). Please read them carefully.
+
+<b>User Responsibilities</b>
+
+You agree to use our website in a lawful manner and not engage in any activity that may harm the website, its users, or its content.
+
+<b>Intellectual Property</b>
+
+All content on this site, including but not limited to text, graphics, logos, and software, is the property of [Sfaret Technologies] and is protected by copyright and other intellectual property laws.
+
+<b>Limitation of Liability</b>
+
+[Sfaret Technologies] will not be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with the use of our website.
+
+<b>Modifications to Terms</b>
+
+We reserve the right to update or modify these Terms at any time without prior notice. Your continued use of the website after any changes constitutes your acceptance of the new Terms.
+
+<b>Privacy Policy</b>
+
+<b>Information Collection</b>
+
+We collect both personal and non-personal information to improve our services. Personal information may include your name, email address, and payment information. Non-personal information may include your browser type and IP address.
+
+<b>Use of Information</b>
+
+We use the information we collect to provide and improve our services, communicate with you, and comply with legal obligations.
+
+<b>Data Sharing</b>
+
+We do not sell or trade your personal information to third parties. We may share information with third parties who assist us in operating our website, conducting our business, or servicing you, as long as those parties agree to keep this information confidential.
+
+<b>Security</b>
+
+We implement a variety of security measures to protect your personal information. However, no method of transmission over the internet or electronic storage is 100% secure.
+
+<b>Cookie Policy</b>
+
+What Are Cookies?
+
+Cookies are small files that a site or its service provider transfers to your computer's hard drive through your web browser (if you allow) that enables the site's or service provider's systems to recognize your browser and capture and remember certain information.
+
+How We Use Cookies
+
+We use cookies to understand and save your preferences for future visits and compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future.
+
+User Choices
+
+You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies via your browser settings. If you turn cookies off, some features will be disabled.
+
+<b>Disclaimer</b>
+
+General Disclaimer
+
+The information provided on our website is for general informational purposes only. All information on the site is provided "as is," with no guarantee of completeness, accuracy, or timeliness.
+
+External Links
+
+Our website may contain links to other websites. These links are provided for your convenience, and [Sfaret Technologies] has no control over the content of these sites.
+
+Contact Information
+
+If you have any questions or concerns about our legal policies, please contact us at:
+
+<b>[Sfaret Technologies]  
+
+    [Port Harcourt, Rivers State.]  
+
+    [info@sfarettech.com.ng]  
+
+    [+234-7049515934]  </b>
+
+    </p>`
+            };
+            document.getElementById('content').innerHTML = sections[section];
+            document.querySelectorAll('.menu button').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(`${section}-btn`).classList.add('active');
+        }
+        function goHome() {
+            window.location.href = "index.html"; // Change this to the actual homepage URL
+        }
+    </script>
+</body>
+</html>
