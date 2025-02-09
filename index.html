@@ -432,57 +432,144 @@
 
 <!-- Announcement Section -->
 <section class="announcement-section">
-<div class="container">
-  <h2>Announcements</h2>
-  <div class="announcement-slider">
-    <div class="announcement-item">
-      <h3>Announcement 1</h3>
-      <p>Big news! We will be launching a new feature soon!! Wait....</p>
-    </div>
-    <div class="announcement-item">
-      <h3>Announcement 2</h3>
-      <p>Stay tuned for upcoming events by following us on Social Media via 
-        <a href="https://www.facebook.com" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Facebook_Logo_2023.png" alt="Facebook Logo">
-        </a> 
-        <a href="https://twitter.com" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Twitter_Logo_2021.svg" alt="Twitter Logo">
-        </a> 
-        <a href="https://www.youtube.com" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Logo">
-        </a>
-      </p>
-    </div>
-    <div class="announcement-item">
-      <h3>Announcement 3</h3>
-      <p>Whitepaper and Presales Shares and Investment Funding coming soon... wait for update.</p>
+  <div class="container">
+    <h2>Announcements</h2>
+    <div class="announcement-box">
+      <button class="prev-btn">&#10094;</button>
+      <div class="announcement-slider">
+        <div class="announcement-item">
+          <h3>Announcement 1</h3>
+          <p>Big news! We will be launching a new feature soon!! Wait....</p>
+        </div>
+        <div class="announcement-item">
+          <h3>Announcement 2</h3>
+          <p>
+            Stay tuned for upcoming events by following us on Social Media:
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Facebook_Logo_2023.png" alt="Facebook Logo">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Twitter_Logo_2021.svg" alt="Twitter Logo">
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Logo">
+            </a>
+          </p>
+        </div>
+        <div class="announcement-item">
+          <h3>Announcement 3</h3>
+          <p>Whitepaper and Presales Shares and Investment Funding coming soon... wait for update.</p>
+        </div>
+      </div>
+      <button class="next-btn">&#10095;</button>
     </div>
   </div>
-</div>
 </section>
 
-<!-- JS for Announcement Section -->
+<!-- CSS for Styling -->
+<style>
+.announcement-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.announcement-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.announcement-slider {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.announcement-item {
+  flex: 0 0 100%;
+  display: none;
+}
+
+.announcement-item.active {
+  display: block;
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.prev-btn { left: -40px; }
+.next-btn { right: -40px; }
+
+.prev-btn:hover, .next-btn:hover {
+  background: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .prev-btn { left: -20px; }
+  .next-btn { right: -20px; }
+}
+</style>
+
+<!-- JavaScript for Slider -->
 <script>
-var currentIndex = 0;
-var announcements = document.querySelectorAll('.announcement-item');
-var announcementCount = announcements.length;
+let currentIndex = 0;
+const items = document.querySelectorAll('.announcement-item');
+const totalItems = items.length;
+const intervalTime = 5000;
+let sliderInterval;
 
 function showAnnouncement(index) {
-  announcements.forEach((item, idx) => {
-    item.style.display = idx === index ? 'block' : 'none';
+  items.forEach((item, idx) => {
+    item.classList.toggle('active', idx === index);
   });
 }
 
 function nextAnnouncement() {
-  currentIndex = (currentIndex + 1) % announcementCount;
+  currentIndex = (currentIndex + 1) % totalItems;
   showAnnouncement(currentIndex);
 }
 
-setInterval(nextAnnouncement, 5000); // 5 seconds interval
-</script>
+function prevAnnouncement() {
+  currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+  showAnnouncement(currentIndex);
+}
 
-</body>
-</html>
+// Auto-Slide
+function startSlider() {
+  sliderInterval = setInterval(nextAnnouncement, intervalTime);
+}
+
+// Stop Auto-Slide on Hover
+document.querySelector('.announcement-box').addEventListener('mouseenter', () => clearInterval(sliderInterval));
+document.querySelector('.announcement-box').addEventListener('mouseleave', startSlider);
+
+// Event Listeners for Buttons
+document.querySelector('.next-btn').addEventListener('click', nextAnnouncement);
+document.querySelector('.prev-btn').addEventListener('click', prevAnnouncement);
+
+// Start the slider
+showAnnouncement(currentIndex);
+startSlider();
+</script>
 <!-- End of Announcement Section -->
 
 <!DOCTYPE html>
