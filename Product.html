@@ -126,103 +126,123 @@
       
   <!-- end Product section -->
 
-  <!-- info section -->
-
-  <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-3 info_col">
-          <div class="info_contact">
-            <h4>
-              Address
-            </h4>
-            <div class="contact_link_box">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Port Harcourt, Rivers state.
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +234 7049515934
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  info@sfarettech.com.ng
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="info_social">
-            <a href="https://www.facebook.com/profile.php?id=100092294964685/">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="https://twitter.com/SfaretTech">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/SfaretTechnologies">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.youtube.com/SfaretTech">
-              <i class="fa fa-youtube" aria-hidden="true"></i>
-            </a>
+<!-- Info Section -->
+<section class="info_section layout_padding2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3 info_col">
+        <div class="info_contact">
+          <h4>Address</h4>
+          <div class="contact_link_box">
+            <a href="#"><i class="fa fa-map-marker"></i> Port Harcourt, Rivers state Nigeria</a>
+            <a href="#"><i class="fa fa-phone"></i> Call +234 7049515934</a>
+            <a href="#"><i class="fa fa-envelope"></i> info@sfarettech.com.ng</a>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 info_col">
-          <div class="info_detail">
-            <h4>
-              Info
-            </h4>
-            <p>
-              Revitalize the Educational Ecosystem through Advanace Technology.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-2 mx-auto info_col">
-          <div class="info_link_box">
-            <h4>
-              Company
-            </h4>
-            <div class="info_links">
-              <a class="active" href="index.html">
-                Home
-              </a>
-              <a class="" href="http://www.sfaretedu.com.ng">
-                SfaretEdu
-              </a>
-              <a class="" href="Sfaret Career/index.html">
-                Career
-              </a>
-              <a class="" href="contact.html">
-                Contact
-              </a>
-              <a class="" href="legal.html">
-                Legals
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info_col ">
-          <h4>
-            Subscribe
-          </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
-          </form>
+        <div class="info_social">
+          <a href="https://www.facebook.com/share/1KcADWEYPg/"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/SfaretTech"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/SfaretTechnologies"><i class="fa fa-linkedin"></i></a>
+          <a href="https://youtube.com/@sfarettech?si=Eb058qxQZ-989tpN"><i class="fa fa-youtube"></i></a>
         </div>
       </div>
+      <div class="col-md-6 col-lg-3 info_col">
+        <div class="info_detail">
+          <h4>Info</h4>
+          <p>Revitalize the Educational Ecosystem through Advanced Technology.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-2 mx-auto info_col">
+        <div class="info_link_box">
+          <h4>Company</h4>
+          <div class="info_links">
+            <a class="active" href="index.html">Home</a>
+            <a href="presale calculator.html">Presale Calculator</a>
+            <a href="http://www.sfaretedu.com.ng">SfaretEdu</a>
+            <a href="Sfaret Career/index.html">Career</a>
+            <a href="contact.html">Contact</a>
+            <a href="legal.html">Legals</a>
+            <a href="#" onclick="openTermsModal()">Terms and Conditions</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 info_col">
+        <h4>Subscribe</h4>
+        <form action="#">
+          <input type="text" placeholder="Enter email" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+<!-- End Info Section -->
 
-  <!-- end info section -->
+<!-- Terms and Conditions Modal -->
+<div id="termsModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeTermsModal()">&times;</span>
+    <iframe id="termsFrame" src="terms-and-conditions.html" width="100%" height="400px" style="border: none;"></iframe>
+  </div>
+</div>
 
+<!-- CSS for Popup -->
+<style>
+  /* Background overlay */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  /* Modal content box */
+  .modal-content {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    max-width: 500px;
+    height: 450px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  /* Close button */
+  .close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+</style>
+
+<!-- JavaScript for Modal -->
+<script>
+  function openTermsModal() {
+    document.getElementById("termsModal").style.display = "block";
+  }
+
+  function closeTermsModal() {
+    document.getElementById("termsModal").style.display = "none";
+  }
+
+  // Close modal when clicking outside it
+  window.onclick = function(event) {
+    var modal = document.getElementById("termsModal");
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+<!-- End of Terms and Conditions Modal -->
   <!-- footer section -->
   <section class="footer_section">
     <div class="container">
