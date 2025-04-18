@@ -13,105 +13,82 @@
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
   <title> SfaretTechnologies </title>
+
+  <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js"></script>
-  <script src="feedback popup.html"></script>
 
-  <!-- bootstrap core css -->
+  <!-- Bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-  <!-- fonts style -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-  <!--owl slider stylesheet -->
+  <!-- Owl slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-  <!-- font awesome style -->
+  <!-- Font Awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
 
-  <!-- Custom styles for this template -->
+  <!-- Custom styles -->
   <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
-  <!--Bullon_Icon-->
+  <!-- Button Icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
   <div class="hero_area">
-
     <div class="hero_bg_box">
       <div class="bg_img_box">
         <img src="images/hero-bg.png" alt="">
       </div>
     </div>
 
-    <!-- header section starts -->
+    <!-- Header -->
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
-            <span>
-              SFARET
-            </span>
+            <span>SFARET</span>
           </a>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ">
-              <li class="nav-item active">
-                <a class="nav-link" href="main.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html"> About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Product.html">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://sfaretlogin1.netlify.app/"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
-              </li>
+            <ul class="navbar-nav">
+              <li class="nav-item active"><a class="nav-link" href="main.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="Product.html">Product</a></li>
+              <li class="nav-item"><a class="nav-link" href="Portfolio.html">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://sfaretlogin1.netlify.app/"><i class="fa fa-user" aria-hidden="true"></i> Login</a></li>
               <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
                   <i class="fa fa-search" aria-hidden="true"></i>
-                </button>..
+                </button>
               </form>
             </ul>
           </div>
         </nav>
       </div>
     </header>
-    <!-- end header section -->
 
-    <!-- slider section -->
-    <section class="slider_section ">
-      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+    <!-- Slider -->
+    <section class="slider_section">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel" data-interval="4000">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="container ">
+            <div class="container">
               <div class="row">
-                <div class="col-md-6 ">
+                <div class="col-md-6">
                   <div class="detail-box">
-                    <h1>
-                    Edu <br>
-                    Technology
-                    </h1>
-                    <p>
-                      We utilize secure, cloud-based solutions for data storage, accessibility, and collaborative work. Additionally, we employ various virtual communication tools like video conferencing, messaging apps, and project management software.
-                    </p>
-                    <div class="">
-                      <a href="" class="btn1"></a>
+                    <h1>Edu <br>Technology</h1>
+                    <p>We utilize secure, cloud-based solutions for data storage, accessibility, and collaborative work. Additionally, we employ various virtual communication tools like video conferencing, messaging apps, and project management software.</p>
+                    <div>
                     </div>
                   </div>
                 </div>
@@ -123,20 +100,15 @@
               </div>
             </div>
           </div>
+
           <div class="carousel-item">
-            <div class="container ">
+            <div class="container">
               <div class="row">
-                <div class="col-md-6 ">
+                <div class="col-md-6">
                   <div class="detail-box">
-                    <h1>
-                      Artificial <br>
-                      Intelligent
-                    </h1>
-                    <p>
-                      By leveraging cutting-edge AI technology and automation, our services cater to the administrative needs of educational institutions, teachers, and educational businesses.
-                    </p>
-                    <div class="">
-                      <a href="" class="btn1"></a>
+                    <h1>Artificial <br>Intelligent</h1>
+                    <p>By leveraging cutting-edge AI technology and automation, our services cater to the administrative needs of educational institutions, teachers, and educational businesses.</p>
+                    <div>
                     </div>
                   </div>
                 </div>
@@ -148,20 +120,15 @@
               </div>
             </div>
           </div>
+
           <div class="carousel-item">
-            <div class="container ">
+            <div class="container">
               <div class="row">
-                <div class="col-md-6 ">
+                <div class="col-md-6">
                   <div class="detail-box">
-                    <h1>
-                      Virtual <br>
-                      Assistance
-                    </h1>
-                    <p>
-                      Our offerings include managing student project/assignment, database maintenance, organizing educational events, providing virtual support to educators, developing educational materials, and streamlining administrative processes.
-                    </p>
-                    <div class="">
-                      <a href="" class="btn1"></a>
+                    <h1>Virtual <br>Assistance</h1>
+                    <p>Our offerings include managing student project/assignment, database maintenance, organizing educational events, providing virtual support to educators, developing educational materials, and streamlining administrative processes.</p>
+                    <div>
                     </div>
                   </div>
                 </div>
@@ -174,6 +141,8 @@
             </div>
           </div>
         </div>
+
+        <!-- Indicators -->
         <ol class="carousel-indicators">
           <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
           <li data-target="#customCarousel1" data-slide-to="1"></li>
@@ -181,7 +150,17 @@
         </ol>
       </div>
     </section>
-    <!-- end slider section -->
+    <!-- End slider section -->
+
+  </div>
+
+  <!-- JS Scripts for Carousel to work -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
   </div>
 
   <!-- about section -->
@@ -383,205 +362,271 @@
     loop: true, // Enable looping of slides
   });
 </script>
+<!-- End of Video Slider -->
+<!-- Popup Container -->
+<div id="popup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <img src="images/lunching presale.png" alt="Update" class="popup-img" />
+    <p><strong>Join Our Edu-Tech Community!</strong><br>Connect, share, and innovate with us.</p>
+    <a href="https://t.me/SfaretEdu_Tech_Official" class="popup-btn" target="_blank">Join Now</a>
+  </div>
+</div>
 
-<!-- Announcement Section -->
 <style>
-  .announcement-section {
-    background-color: #f8f9fa;
-    padding: 50px;
-    text-align: center;
-  }
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 
-  .announcement-slider {
-    display: flex;
-    overflow: hidden;
-  }
+.popup-overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
 
-  .announcement-item {
-    flex: 0 0 100%;
-    margin: 0 20px;
-    background-color: #9085ee;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  max-width: 350px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  position: relative;
+}
 
-  h3 {
-    margin-top: 10px;
-    font-size: 18px;
-    font-weight: bold;
-  }
+.popup-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
 
-  /* Style for SNS logo images */
-  .announcement-item img {
-    width: 48px;      /* Set the size of the logos */
-    height: 48px;     /* Set the height */
-    margin: 0 15px;   /* Space between images */
-    cursor: pointer;  /* Pointer cursor to indicate clickability */
-  }
+.popup-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #5b5bd6;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
 
-  .announcement-item a {
-    display: inline-block;
-  }
-
-  .announcement-item a:hover img {
-    opacity: 0.8;  /* Add a hover effect to the logos */
-  }
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  font-size: 24px;
+  cursor: pointer;
+}
 </style>
-</head>
-<body>
 
-<!-- Announcement Section -->
-<section class="announcement-section">
-  <div class="container">
-    <h2>Announcements</h2>
-    <div class="announcement-box">
-      <button class="prev-btn">&#10094;</button>
-      <div class="announcement-slider">
-        <div class="announcement-item">
-          <h3>Announcement 1</h3>
-          <p>Big news! We will be launching a new feature soon!! Wait....</p>
-        </div>
-        <div class="announcement-item">
-          <h3>Announcement 2</h3>
-          <p>
-            Stay tuned for upcoming events by following us on Social Media:
-            <div class="info_social">
-              <a href="https://www.facebook.com" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook Logo">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter Logo">
-            </a>
-            <a href="https://www.youtube.com" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube Logo">
-            </a>
-            
-          </div>          
-          </p>
-        </div>
-        <div class="announcement-item">
-          <h3>Announcement 3</h3>
-          <p>Whitepaper and Presales Shares and Investment Funding coming soon... wait for update.</p>
+<script>
+function closePopup() {
+  document.getElementById("popup").classList.remove("active");
+}
+
+// Show the popup after 1 second on page load
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("popup").classList.add("active");
+  }, 1000);
+});
+</script>
+
+<!-- SFARET Product Ecosystem Section -->
+<section class="portfolio-section">
+  <h1>SFARET Product Ecosystem</h1>
+  <p>Explore our revolutionary Edu-Tech platforms, each solving critical challenges in education, learning, and institutional development through AI, automation, and innovation.</p>
+
+  <div class="portfolio-content">
+    <!-- S-TIPS -->
+    <div class="card product-card" style="background-image: url('images/STIPS\ admin\ lo.png');">
+      <div class="overlay">
+        <h2>S-TIPS <button onclick="togglePopup('sTips')" class="learn-btn">Learn More</button></h2>
+        <div id="sTips" class="popup">
+          <p><strong>Student-Tailored Interactive Platform:</strong><br>
+            AI-powered academic assistant that helps with task submission, voice automation, and personalized study tools.</p>
         </div>
       </div>
-      <button class="next-btn">&#10095;</button>
+    </div>
+
+    <!-- G-SEE -->
+    <div class="card product-card" style="background-image: url('images/STIPS\ LOGIN\ LOGO\ \(2\).png');">
+      <div class="overlay">
+        <h2>G-SEE <button onclick="togglePopup('gSee')" class="learn-btn">Learn More</button></h2>
+        <div id="gSee" class="popup">
+          <p><strong>Gamified Student Engagement & Excellence:</strong><br>
+            CBT exams, e-library, performance tracking, AI search, and gamified competitions to improve student success.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- EDU-TECH RESEARCH CENTER -->
+    <div class="card product-card" style="background-image: url('images/STIPS\ LOGIN\ LOGO.png');">
+      <div class="overlay">
+        <h2>EDU-HUB <button onclick="togglePopup('eduTech')" class="learn-btn">Learn More</button></h2>
+        <div id="eduTech" class="popup">
+          <p><strong>EDU-TECH RESEARCH LIBRARY CENTER:</strong><br>
+            A hybrid tech space empowering students, educators, and startups through academic incubation and advanced learning facilities.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SkoolBrain -->
+    <div class="card product-card" style="background-image: url('images/STIPS\ Logo\ 2.png');">
+      <div class="overlay">
+        <h2>SkoolBrain <button onclick="togglePopup('skoolBrain')" class="learn-btn">Learn More</button></h2>
+        <div id="skoolBrain" class="popup">
+          <p><strong>Global Institutional Leaderboard:</strong><br>
+            A platform for ranking schools and universities globally, promoting academic excellence and collaboration through verified metrics.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CSS for Styling -->
+<!-- Styles for Product Ecosystem -->
 <style>
-.announcement-section {
-  text-align: center;
-  padding: 40px 20px;
-}
+  /* Scope styles only for the Product Ecosystem section */
+  .portfolio-section {
+    background: linear-gradient(to right, #f4f7f8, #150e3d, #2f2e5e);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
 
-.announcement-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  max-width: 600px;
-  margin: auto;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
+  .portfolio-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
 
-.announcement-slider {
-  overflow: hidden;
-  width: 100%;
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
+  .portfolio-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.announcement-item {
-  flex: 0 0 100%;
-  display: none;
-}
+  .portfolio-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
-.announcement-item.active {
-  display: block;
-}
+  .product-card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    width: 45%;
+    min-height: 100px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: flex-end;
+  }
 
-.prev-btn, .next-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #000;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50%;
-  font-size: 18px;
-}
+  .overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
 
-.prev-btn { left: -40px; }
-.next-btn { right: -40px; }
+  .product-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
 
-.prev-btn:hover, .next-btn:hover {
-  background: #555;
-}
+  .learn-btn {
+    font-size: 0.75em;
+    margin-left: 10px;
+    background: #1abc9c;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .prev-btn { left: -20px; }
-  .next-btn { right: -20px; }
-}
+  .learn-btn:hover {
+    background: #148f77;
+  }
+
+  .popup {
+    display: none;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+
+  .popup p {
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .product-card {
+      width: 100%;
+    }
+  }
 </style>
 
-<!-- JavaScript for Slider -->
+<!-- JavaScript to Toggle Popups -->
 <script>
-let currentIndex = 0;
-const items = document.querySelectorAll('.announcement-item');
-const totalItems = items.length;
-const intervalTime = 5000;
-let sliderInterval;
+  function togglePopup(id) {
+    const popup = document.getElementById(id);
+    popup.style.display = (popup.style.display === "block") ? "none" : "block";
 
-function showAnnouncement(index) {
-  items.forEach((item, idx) => {
-    item.classList.toggle('active', idx === index);
-  });
-}
+    document.querySelectorAll('.popup').forEach(p => {
+      if (p.id !== id) p.style.display = "none";
+    });
 
-function nextAnnouncement() {
-  currentIndex = (currentIndex + 1) % totalItems;
-  showAnnouncement(currentIndex);
-}
-
-function prevAnnouncement() {
-  currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-  showAnnouncement(currentIndex);
-}
-
-// Auto-Slide
-function startSlider() {
-  sliderInterval = setInterval(nextAnnouncement, intervalTime);
-}
-
-// Stop Auto-Slide on Hover
-document.querySelector('.announcement-box').addEventListener('mouseenter', () => clearInterval(sliderInterval));
-document.querySelector('.announcement-box').addEventListener('mouseleave', startSlider);
-
-// Event Listeners for Buttons
-document.querySelector('.next-btn').addEventListener('click', nextAnnouncement);
-document.querySelector('.prev-btn').addEventListener('click', prevAnnouncement);
-
-// Start the slider
-showAnnouncement(currentIndex);
-startSlider();
+    window.addEventListener('click', function (e) {
+      if (!popup.contains(e.target) && !e.target.classList.contains('learn-btn')) {
+        popup.style.display = 'none';
+      }
+    });
+  }
 </script>
-<!-- End of Announcement Section -->
+<!-- End of JavaScript for Popups -->
+ <!-- End of Product Ecosystem Section -->
 
+
+<!-- SFARET SDG Goals Section -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investment Reasons</title>
+    <title>SFARET SDG Goals</title>
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         /* Isolating the section by using unique class names */
         body {
@@ -590,8 +635,8 @@ startSlider();
             margin: 0;
             padding: 0;
         }
-         
-        .investment-section {
+
+        .sdg-section {
             background-color: #ffffff;
             padding: 50px 0;
         }
@@ -637,6 +682,11 @@ startSlider();
             text-align: center;
         }
 
+        .card-header i {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
         .card-body {
             padding: 20px;
             color: #faf6f6;
@@ -646,7 +696,7 @@ startSlider();
         .card-body p {
             margin: 0;
         }
-  
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .card-container {
@@ -657,137 +707,136 @@ startSlider();
 </head>
 <body>
     <!-- Wrapping the entire section to prevent affecting other parts of the webpage -->
-     <section class="investment-section">
+    <section class="sdg-section">
       <div class="container">
-          <h2>Why Invest in Our Company?</h2>
+          <h2>SFARET SDG Goals: Driving Positive Change</h2>
           <div class="card-container">
               <div class="card">
-                  <div class="card-header">Innovative Technology and Market Edge</div>
+                  <div class="card-header">
+                      <i class="fas fa-hand-holding-usd"></i> No Poverty (SDG 1)
+                  </div>
                   <div class="card-body">
-                      Investing in our company means supporting cutting-edge technology in the educational sectors. Our solutions leverage AI and advanced tech to revolutionize learning and Administrative Management, giving us a significant competitive advantage.
+                      At SFARET, we are committed to eradicating poverty by providing access to education and technology that enables individuals to lift themselves out of poverty. Our AI-powered platform helps create job opportunities and empower marginalized communities.
                   </div>
               </div>
               <div class="card">
-                  <div class="card-header">Strong Market Demand</div>
+                  <div class="card-header">
+                      <i class="fas fa-book-reader"></i> Quality Education (SDG 4)
+                  </div>
                   <div class="card-body">
-                      There is a growing need for effective educational tools and efficient Edu-Tech. By investing now, you position yourself to benefit from this expanding market, where our unique offerings are poised to meet and exceed current demands.
+                      We aim to improve access to quality education worldwide. Through our innovative platform, we provide affordable learning solutions that enhance the learning experience, focusing on technology-driven education for all.
                   </div>
               </div>
               <div class="card">
-                  <div class="card-header">Early Investor Benefits</div>
+                  <div class="card-header">
+                      <i class="fas fa-briefcase"></i> Decent Work and Economic Growth (SDG 8)
+                  </div>
                   <div class="card-body">
-                      Participating in our presale crowdfunding offers exclusive early-bird benefits. This includes preferential pricing on shares, which can significantly increase in value as our company grows and scales.
+                      SFARET is focused on generating decent work opportunities and promoting economic growth through our EdTech solutions. Our platform not only empowers students but also helps educational institutions grow and contribute to the economy.
                   </div>
               </div>
               <div class="card">
-                  <div class="card-header">Experienced Team and Proven Vision</div>
+                  <div class="card-header">
+                      <i class="fas fa-industry"></i> Industry, Innovation, and Infrastructure (SDG 9)
+                  </div>
                   <div class="card-body">
-                      Our team consists of industry experts with a proven track record in technology and Edu-Tech innovation. Investing in our company means backing a team that is committed to executing a clear and ambitious vision.
+                      Our solutions promote innovation in the education sector. By advancing the use of technology and AI, we help build sustainable infrastructure in schools and universities, fostering a modern, forward-thinking educational environment.
                   </div>
               </div>
               <div class="card">
-                  <div class="card-header">Social Impact and Value Creation</div>
-                  <div class="card-body">
-                      By investing in our company, you contribute to meaningful social impact. Our products aim to improve educational outcomes, creating positive changes in people's lives and fostering community development.
+                  <div class="card-header">
+                      <i class="fas fa-city"></i> Sustainable Cities and Communities (SDG 11)
                   </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-<!-- Portfolio/Whitepaper Section -->
+                  <div class="card-body">
+                      SFARET supports sustainable development by creating smart, resilient, and inclusive educational systems that contribute to the creation of sustainable cities and communities. We integrate technology to improve the quality of life and reduce environmental impact.
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+</body>
+</html>
+<!-- End of SFARET SDG Goals Section -->
+ 
+<!-- Investment Section -->
 <section class="portfolio-section">
-    <h1>Portfolio & White Paper</h1>
-    <p>Explore the projects we've developed and the impact we've made in the edu-tech space. Learn about the research and technology behind our innovations.</p>
-    <div class="portfolio-content">
-        <div class="card">
-            <h2>Our Portfolio</h2>
-            <p>Explore the projects we've developed and the impact we've made in the edu-tech space. Our portfolio showcases our dedication to providing innovative solutions for modern education.</p>
-            <a href="c:\Users\SFARET TECHNOLOGIES\Desktop\SF PROJECT 2\SFARET TECHNOLOGIES Inc\SFARET MARKETING\Sfaret Company Profile.pdf">Download Portfolio</a>
-        </div>
-        <div class="card">
-            <h2>White Paper</h2>
-            <p>Learn about the research and technology behind our innovations. Our white paper details the strategies we employ to push the boundaries of educational technology.</p>
-            <a href="c:\Users\SFARET TECHNOLOGIES\Desktop\SF PROJECT 2\SFARET TECHNOLOGIES Inc\SFARET MARKETING\SFARET Whitepaper VS 1.1 (full).pdf">Download White Paper</a>
-        </div>
-    </div>
+  <h1>Investment (Shares)</h1>
+  <p>We are opening an opportunity for the public to fund our innovations and become holders in our revolutionary Edu-Tech ecosystem.</p>
+  <div class="portfolio-content">
+      <div class="card">
+          <h2>Public Investment Opportunity</h2>
+          <p>We will be offering the public who want to fund our innovations a shares value <strong>20%</strong> worth <strong>NGN 960 Million ($600,000)</strong>. This will be distributed strategically over several months to facilitate the development of Sfaret Technologies Ecosystem and Innovation, Platforms, and Community.</p>
+      </div>
+      <div class="card">
+          <h2>Seed Investment Phase</h2>
+          <p>We plan to let the public buy and hold Sfaret Tech shares at a target price of <strong>NGN 1 per share</strong> during Seed Investment Phase I and before the full launch of Sfaret Technologies products.</p>
+      </div>
+      <div class="card">
+          <h2>Phased Distribution</h2>
+          <p>During the sale and distribution phase, the community will be able to acquire shares from <strong>Pre-Phase I and II</strong>, depending on the amount of funds received so far for our tech development.</p>
+      </div>
+  </div>
 </section>
 
-<!-- CSS for Portfolio/Whitepaper Section -->
+<!-- CSS for Portfolio/Whitepaper & Investment Section -->
 <style>
   .portfolio-section {
-    background-color: #ffffff;
-    padding: 50px;
-    text-align: center;
+      background: linear-gradient(to right, #f4f7f8, #150e3d, #2f2e5e);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
   }
-        .portfolio-section {
-            background: linear-gradient(to right, #f4f7f8, #150e3d, #2f2e5e);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .portfolio-section h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        .portfolio-section p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .portfolio-content {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .card {
-            background: #240361;
-            border-radius: 10px;
-            padding: 20px;
-            width: 45%;
-            margin-bottom: 20px;
-            box-shadow: 0 5px 15px rgba(253, 253, 253, 0.2);
-            text-align: center;
-        }
-        .card h2 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-        }
-        .card p {
-            font-size: 1em;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-        .card a {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #3498db;
-            color: white;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
-        .card a:hover {
-            background: #2980b9;
-        }
-        footer {
-            margin-top: auto;
-            padding: 20px;
-            background: #0F2027;
-            color: white;
-            text-align: center;
-        }
-        footer p {
-            font-size: 0.9em;
-            color: #7f8c8d;
-        }
+  .portfolio-section h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+  }
+  .portfolio-section p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .portfolio-content {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
+  .card {
+      background: #240361;
+      border-radius: 10px;
+      padding: 20px;
+      width: 45%;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 15px rgba(253, 253, 253, 0.2);
+      text-align: center;
+  }
+  .card h2 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+  }
+  .card p {
+      font-size: 1em;
+      margin-bottom: 20px;
+      line-height: 1.6;
+  }
+  .card a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #3498db;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+  }
+  .card a:hover {
+      background: #2980b9;
+  }
 </style>
-<!-- End of Portfolio/Whitepaper Section -->  
+<!-- End of Portfolio/Whitepaper & Investment Section -->
 
   <!-- Sponsor section -->
   <!DOCTYPE html>
@@ -842,6 +891,7 @@ startSlider();
               <img src="images/go54.png" alt="Go54">
               <img src="images/microsoft.png" alt="Microsoft">
               <img src="images/openai.png" alt="OpenAI">
+              <img src="images/Flutterwave_Logo.png" alt="Flutterwave">
               <!-- Repeat the logos to create a seamless scrolling effect -->
               <img src="images/google.png" alt="Google">
               <img src="images/github.png" alt="GitHub">
@@ -850,6 +900,7 @@ startSlider();
               <img src="images/go54.png" alt="Go54">
               <img src="images/microsoft.png" alt="Microsoft">
               <img src="images/openai.png" alt="OpenAI">
+              <img src="images/Flutterwave_Logo.png" alt="Flutterwave">
           </div>
       </div>
   </div>
@@ -858,40 +909,314 @@ startSlider();
   </html>
 
   <!-- end sponsor section -->
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>WhatsApp Chat</title>
-      <style>
-          .whatsapp-button {
-              position: fixed;
-              bottom: 20px;
-              right: 20px;
-              background-color: #25D366;
-              border-radius: 50%;
-              width: 60px;
-              height: 60px;
-              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              z-index: 1000;
-          }
-          .whatsapp-button img {
-              width: 35px;
-              height: 35px;
-          }
-      </style>
-  </head>
-  <body>
-      <!-- WhatsApp Chat Button -->
-      <a href="https://wa.me/message/KADIFQHJVDURN1" class="whatsapp-button" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-      </a>
-  </body>
-  </html>  
+
+  <!-- Announcement Section -->
+<section class="announcement-section">
+  <div class="container">
+    <h2> Announcements</h2>
+    <div class="announcement-box">
+      <button class="prev-btn">&#10094;</button>
+      <div class="announcement-slider">
+        <div class="announcement-item active">
+          <h3>Announcement 1</h3>
+          <p>Big news! 🚀 We will be launching a new feature soon! Stay tuned...</p>
+        </div>
+        <div class="announcement-item">
+          <h3>Announcement 2</h3>
+          <p>Follow us on social media for updates and events:</p>
+          <div class="info_social">
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+            </a>
+          </div>
+        </div>
+        <div class="announcement-item">
+          <h3>Announcement 3</h3>
+          <p>📄 Whitepaper, Presale Shares, and Investment Funding updates coming soon. Stay connected!</p>
+        </div>
+      </div>
+      <button class="next-btn">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<!-- CSS for Announcement Section -->
+<style>
+.announcement-section {
+  background-color: #f4f6fa;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.announcement-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #150e3d;
+}
+
+.announcement-box {
+  position: relative;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 750px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.announcement-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.announcement-item {
+  flex: 0 0 100%;
+  display: none;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #e6e5fb;
+  color: #000;
+}
+
+.announcement-item.active {
+  display: block;
+}
+
+.announcement-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.announcement-item p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.info_social a {
+  display: inline-block;
+  margin: 10px 10px 0 10px;
+}
+
+.info_social img {
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+}
+
+.info_social img:hover {
+  opacity: 0.75;
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #240361;
+  color: #fff;
+  border: none;
+  padding: 10px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.prev-btn { left: -30px; }
+.next-btn { right: -30px; }
+
+.prev-btn:hover, .next-btn:hover {
+  background: #444;
+}
+
+@media (max-width: 768px) {
+  .announcement-box {
+    padding: 15px;
+  }
+  .prev-btn, .next-btn {
+    left: -15px;
+    right: -15px;
+  }
+}
+</style>
+
+<!-- JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  let currentIndex = 0;
+  const items = document.querySelectorAll('.announcement-item');
+  const totalItems = items.length;
+  const intervalTime = 6000;
+  let sliderInterval;
+
+  function showAnnouncement(index) {
+    items.forEach((item, i) => {
+      item.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextAnnouncement() {
+    currentIndex = (currentIndex + 1) % totalItems;
+    showAnnouncement(currentIndex);
+  }
+
+  function prevAnnouncement() {
+    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+    showAnnouncement(currentIndex);
+  }
+
+  document.querySelector('.next-btn').addEventListener('click', nextAnnouncement);
+  document.querySelector('.prev-btn').addEventListener('click', prevAnnouncement);
+
+  // Auto-slide
+  function startSlider() {
+    sliderInterval = setInterval(nextAnnouncement, intervalTime);
+  }
+
+  // Pause on hover
+  const box = document.querySelector('.announcement-box');
+  box.addEventListener('mouseenter', () => clearInterval(sliderInterval));
+  box.addEventListener('mouseleave', startSlider);
+
+  // Start
+  showAnnouncement(currentIndex);
+  startSlider();
+});
+</script>
+<!-- End of Announcement -->
+<!-- Community Section -->
+<section class="community-section">
+  <h1>Join The Fastest Growing Community</h1>
+<p>Join our community to exchange ideas, and drive the future of Education technology. Stay connected, share knowledge, and be part of the innovation.</p>
+<button class="join-btn" onclick="window.location.href='https://t.me/SfaretEdu_Tech_Official'">Join Now</button>
+
+  <!-- Community Details (Icons or Features) -->
+  <div class="community-details">
+    <div>
+      <img src="images/innovation discussion.png" alt="Innovative Discussions" />
+      <h3>Innovative Discussions</h3>
+      <p>Engage with like-minded individuals to discuss cutting-edge tech.</p>
+    </div>
+    <div>
+      <img src="images/collaburation (1).png" alt="Collaborative Projects" />
+      <h3>Collaborative Projects</h3>
+      <p>Work on projects that shape the future of Education ecosystem.</p>
+    </div>
+    <div>
+      <img src="images/global network (2).png" alt="Global Network" />
+      <h3>Global Network</h3>
+      <p>Connect with professionals from around the world.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Isolated Community Section Styles */
+  .community-section {
+    background: linear-gradient(to right, #2f2e5e, #150e3d);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .community-section::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+  }
+
+  .community-section h1 {
+    font-size: 2.5em;
+    color: #1abc9c;
+    margin-bottom: 20px;
+  }
+
+  .community-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #f0f0f0;
+  }
+
+  .community-section .join-btn {
+    background-color: #1abc9c;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .community-section .join-btn:hover {
+    background-color: #148f77;
+  }
+
+  .community-section .community-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+
+  .community-section .community-details div {
+    text-align: center;
+  }
+
+  .community-section .community-details img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .community-section .community-details h3 {
+    color: #fff;
+    font-size: 1.25em;
+    margin-bottom: 10px;
+  }
+
+  .community-section .community-details p {
+    font-size: 1em;
+    color: #bbb;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 450px) {
+    .community-section {
+      padding: 40px 20px;
+    }
+
+    .community-section .community-details {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .community-section .community-details div {
+      margin-top: 20px;
+    }
+  }
+</style>
+<!-- End of Community Section -->
 
  <!-- Info Section -->
 <section class="info_section layout_padding2">
@@ -939,7 +1264,7 @@ startSlider();
             <a href="Sfaret Career/index.html">Career</a>
             <a href="contact.html">Contact</a>
             <a href="legal.html">Legals</a>
-            <a href="#" onclick="openTermsModal()">Terms and Conditions</a>
+            <a href="terms-and-conditions.html" onclick="openTermsModal()">Terms and Conditions</a>
           </div>
         </div>
       </div>
@@ -962,6 +1287,7 @@ startSlider();
     <iframe id="termsFrame" src="terms-and-conditions.html" width="100%" height="400px" style="border: none;"></iframe>
   </div>
 </div>
+<!-- End of Terms and Conditions Modal -->
 
 <!-- CSS for Popup -->
 <style>
@@ -1052,6 +1378,10 @@ startSlider();
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- Font Awesome for icons -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>  
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </body>
