@@ -690,7 +690,7 @@ window.addEventListener("load", () => {
 
         .card-body {
         padding: 20px;
-        color: #333; /* Changed from #faf6f6 to dark color */
+        color: #f6f2f2; /* Changed from #faf6f6 to dark color */
         font-size: 1em;
         }
         
@@ -705,6 +705,14 @@ window.addEventListener("load", () => {
                 grid-template-columns: 1fr;
             }
         }
+        /* Add to your CSS */
+.card, .box {
+  color: inherit !important; /* Prevent color overrides */
+}
+
+body {
+  color: #333; /* Default text color */
+}
     </style>
 </head>
 <body>
