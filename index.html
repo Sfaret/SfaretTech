@@ -248,13 +248,14 @@
     flex-wrap: wrap;
   }
   .card {
-    background: rgb(26, 2, 70);
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  }
+  background: rgb(26, 2, 70);
+  color: white; /* Explicitly set text color */
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 </style>
 <!-- End of EduTech Section -->
 
@@ -548,16 +549,16 @@ window.addEventListener("load", () => {
     padding: 20px;
     text-align: center;
   }
+/* In Product Ecosystem section */
+.product-card h2 {
+  color: white; /* Ensure headings are visible */
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
 
-  .product-card h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
+.popup {
+  color: white !important; /* Force popup text color */
+}
 
   .learn-btn {
     font-size: 0.75em;
@@ -688,10 +689,11 @@ window.addEventListener("load", () => {
         }
 
         .card-body {
-            padding: 20px;
-            color: #faf6f6;
-            font-size: 1em;
+        padding: 20px;
+        color: #333; /* Changed from #faf6f6 to dark color */
+        font-size: 1em;
         }
+        
 
         .card-body p {
             margin: 0;
@@ -805,15 +807,15 @@ window.addEventListener("load", () => {
       justify-content: space-around;
       flex-wrap: wrap;
   }
-  .card {
-      background: #240361;
-      border-radius: 10px;
-      padding: 20px;
-      width: 45%;
-      margin-bottom: 20px;
-      box-shadow: 0 5px 15px rgba(253, 253, 253, 0.2);
-      text-align: center;
-  }
+  /* In Investment section */
+.card {
+  background: #240361;
+  color: white; /* Explicit text color */
+  border-radius: 10px;
+  padding: 20px;
+  width: 45%;
+  margin-bottom: 20px;
+}
   .card h2 {
       font-size: 1.8em;
       margin-bottom: 15px;
