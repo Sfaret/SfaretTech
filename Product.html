@@ -162,7 +162,7 @@
             <a href="Sfaret Career/index.html">Career</a>
             <a href="contact.html">Contact</a>
             <a href="legal.html">Legals</a>
-            <a href="#" onclick="openTermsModal()">Terms and Conditions</a>
+            <a href="terms-and-conditions.html" onclick="openTermsModal()">Terms and Conditions</a>
           </div>
         </div>
       </div>
@@ -178,71 +178,6 @@
 </section>
 <!-- End Info Section -->
 
-<!-- Terms and Conditions Modal -->
-<div id="termsModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeTermsModal()">&times;</span>
-    <iframe id="termsFrame" src="terms-and-conditions.html" width="100%" height="400px" style="border: none;"></iframe>
-  </div>
-</div>
-
-<!-- CSS for Popup -->
-<style>
-  /* Background overlay */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-  }
-  /* Modal content box */
-  .modal-content {
-    background-color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    max-width: 500px;
-    height: 450px;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  /* Close button */
-  .close {
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    font-size: 24px;
-    cursor: pointer;
-  }
-</style>
-
-<!-- JavaScript for Modal -->
-<script>
-  function openTermsModal() {
-    document.getElementById("termsModal").style.display = "block";
-  }
-
-  function closeTermsModal() {
-    document.getElementById("termsModal").style.display = "none";
-  }
-
-  // Close modal when clicking outside it
-  window.onclick = function(event) {
-    var modal = document.getElementById("termsModal");
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-</script>
-<!-- End of Terms and Conditions Modal -->
   <!-- footer section -->
   <section class="footer_section">
     <div class="container">
