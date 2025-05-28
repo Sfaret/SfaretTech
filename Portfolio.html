@@ -423,26 +423,65 @@
         </p>
         <div class="buy-box">
           <div class="buy-item">
-            <i class="fa fa-money-bill-wave fa-3x"></i> <!-- Money Bill Wave icon --> 
+            <i class="fa fa-money-bill-wave fa-3x"></i>
             <h4>Affordable Investment Plans</h4>
             <p>Choose from a range of investment plans tailored for different budget levels.</p>
           </div>
           <div class="buy-item">
-            <i class="fa fa-cogs fa-3x"></i> <!-- Gear icon -->
+            <i class="fa fa-cogs fa-3x"></i>
             <h4>Cutting-Edge Technology</h4>
             <p>Invest in technology that’s shaping the future of education and administrative management.</p>
           </div>
           <div class="buy-item">
-            <i class="fa fa-money-check-alt fa-3x"></i> <!-- Money Check Alt icon -->
+            <i class="fa fa-money-check-alt fa-3x"></i>
             <h4>Exclusive Investor Benefits</h4>
             <p>Get early-bird perks, discounted rates, and priority access to future investment opportunities.</p>
           </div>
         </div>
-        <a href="https://sfaretlogin1.netlify.app/" class="btn btn-primary btn-lg">Start Investing Now</a> <!-- Button linking to sign-up section -->
+        <!-- Investment Type Selection (Boxed Options) -->
+        <div style="margin: 40px 0;">
+          <h3 style="color:#007bff; margin-bottom:20px;">Choose Your Investment Platform</h3>
+          <form id="investment-type-form" style="display:flex; gap:30px; justify-content:center; flex-wrap:wrap;">
+            <!-- SIP Option -->
+            <label style="flex:1 1 250px; min-width:250px; max-width:350px; background:#fff; border:2px solid #007bff; border-radius:10px; padding:25px 20px; margin:10px; box-shadow:0 2px 8px rgba(0,0,0,0.07); cursor:pointer; transition:box-shadow 0.2s;">
+              <input type="radio" name="investmentType" value="sip" checked style="margin-right:15px; accent-color:#007bff;">
+              <div>
+                <strong style="font-size:1.2em; color:#007bff;">SIP (Sfaret Investment Platform)</strong>
+                <p style="margin:10px 0 0 0; color:#333; font-size:1em;"></p>
+                  Start small, invest consistently. Grow your stake in SFARET Technologies over time while supporting innovation in education.
+                </p>
+              </div>
+            </label>
+            <!-- Equity Option -->
+            <label style="flex:1 1 250px; min-width:250px; max-width:350px; background:#fff; border:2px solid #28a745; border-radius:10px; padding:25px 20px; margin:10px; box-shadow:0 2px 8px rgba(0,0,0,0.07); cursor:pointer; transition:box-shadow 0.2s;">
+              <input type="radio" name="investmentType" value="equity" style="margin-right:15px; accent-color:#28a745;">
+              <div>
+                <strong style="font-size:1.2em; color:#28a745;">Get Equity</strong>
+                <p style="margin:10px 0 0 0; color:#333; font-size:1em;">
+                  Buy Presale-equity shares and become a co-innovator in Africa’s leading AI-powered EdTech ecosystem. Be part of the transformation.
+                </p>
+              </div>
+            </label>
+          </form>
+          <div style="text-align:center; margin-top:30px;">
+            <button type="button" class="btn btn-primary btn-lg" onclick="startInvestment()">Get Started</button>
+          </div>
+        </div>
+        <!-- End Investment Type Selection -->
       </div>
     </div>
   </div>
 </section>
+<script>
+  function startInvestment() {
+    var type = document.querySelector('input[name="investmentType"]:checked').value;
+    if (type === 'sip') {
+      window.location.href = "https://sfaretlogin1.netlify.app/";
+    } else if (type === 'equity') {
+      window.location.href = "https://sfaretlogin1.netlify.app/equity";
+    }
+  }
+</script>
 
 <!-- Style for the Buy Section -->
 <style>
