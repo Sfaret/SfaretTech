@@ -73,10 +73,10 @@
                 <a class="nav-link" href="Product.html">Product</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Portfolio.html">portfolio</a>
+                <a class="nav-link" href="Ecosystem/index.html">Ecosystem</a></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://sfaretlogin1.netlify.app/"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+                <a class="nav-link" href="contact.html">Contact us</a>
               </li>
               <form class="form-inline">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
@@ -139,54 +139,52 @@
         Why Choose <span>Us</span>
       </h2>
     </div>
-    <div class="slider">
-      <div class="slides">
-        <!-- First Slide -->
-        <div class="slide">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/w1.png" alt="Virtual Expert Management">
-            </div>
-            <div class="detail-box">
-              <h5>Virtual Expert Management</h5>
-              <p>Our offerings include managing student projects/assignments, database maintenance, organizing educational events, providing virtual support to educators, developing educational materials, and streamlining administrative processes.</p>
-            </div>
+    <div class="row">
+      <!-- First Box -->
+      <div class="col-md-3 col-sm-6">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/w1.png" alt="Virtual Expert Management">
+          </div>
+          <div class="detail-box">
+            <h5>Virtual Expert Management</h5>
+            <p>Our offerings include managing student projects/assignments, database maintenance, organizing educational events, providing virtual support to educators, developing educational materials, and streamlining administrative processes.</p>
           </div>
         </div>
-        <!-- Second Slide -->
-        <div class="slide">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/w2.png" alt="Flexible Payment">
-            </div>
-            <div class="detail-box">
-              <h5>Flexible Payment</h5>
-              <p>Customized Solutions: Our services are tailored to meet the unique needs of educational institutions, offering flexible packages or bespoke solutions.</p>
-            </div>
+      </div>
+      <!-- Second Box -->
+      <div class="col-md-3 col-sm-6">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/w2.png" alt="Flexible Payment">
+          </div>
+          <div class="detail-box">
+            <h5>Flexible Payment</h5>
+            <p>Customized Solutions: Our services are tailored to meet the unique needs of educational institutions, offering flexible packages or bespoke solutions.</p>
           </div>
         </div>
-        <!-- Third Slide -->
-        <div class="slide">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/w3.png" alt="Innovations">
-            </div>
-            <div class="detail-box">
-              <h5>Innovations</h5>
-              <p>By leveraging cutting-edge AI technology and automation, our services cater to the administrative needs of educational institutions, teachers, and educational businesses.</p>
-            </div>
+      </div>
+      <!-- Third Box -->
+      <div class="col-md-3 col-sm-6">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/w3.png" alt="Innovations">
+          </div>
+          <div class="detail-box">
+            <h5>Innovations</h5>
+            <p>By leveraging cutting-edge AI technology and automation, our services cater to the administrative needs of educational institutions, teachers, and educational businesses.</p>
           </div>
         </div>
-        <!-- Fourth Slide -->
-        <div class="slide">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/w4.png" alt="Empowerment">
-            </div>
-            <div class="detail-box">
-              <h5>Empowerment</h5>
-              <p>Remote Workforce: We employ skilled virtual assistants proficient in administrative tasks and adept at using cutting-edge technologies.</p>
-            </div>
+      </div>
+      <!-- Fourth Box -->
+      <div class="col-md-3 col-sm-6">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/w4.png" alt="Empowerment">
+          </div>
+          <div class="detail-box">
+            <h5>Empowerment</h5>
+            <p>Remote Workforce: We employ skilled virtual assistants proficient in administrative tasks and adept at using cutting-edge technologies.</p>
           </div>
         </div>
       </div>
@@ -199,67 +197,31 @@
   </div>
 </section>
 
-<!-- Add your CSS and JavaScript -->
 <style>
-  .slider {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .slide {
-    min-width: 50%;
-    box-sizing: border-box;
-  }
-
-  .box {
+  .why_section .box {
     padding: 20px;
     border: 1px solid #ccc;
     background: #f3f2f7;
-    margin: 20px;
+    margin: 20px 0;
+    height: 100%;
+    text-align: center;
+    border-radius: 8px;
   }
 
-  .img-box img {
+  .why_section .img-box img {
     max-width: 50%;
+    margin-bottom: 15px;
   }
 
-  .heading_container {
+  .why_section .heading_container {
     margin-bottom: 30px;
   }
 
-  .btn-box {
+  .why_section .btn-box {
     text-align: center;
     margin-top: 20px;
   }
 </style>
-
-<script>
-  let currentIndex = 0;
-
-  function showSlide(index) {
-    const slides = document.querySelector('.slides');
-    const totalSlides = document.querySelectorAll('.slide').length;
-
-    if (index >= totalSlides) {
-      currentIndex = 0;
-    } else if (index < 0) {
-      currentIndex = totalSlides - 1;
-    } else {
-      currentIndex = index;
-    }
-
-    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-  }
-
-  setInterval(() => {
-    showSlide(currentIndex + 1);
-  }, 5000); // Change slide every 10 seconds
-</script>
 <!-- End Why Section -->
 
 <!-- Swiper CSS -->
@@ -283,7 +245,7 @@
           <div class="team-card">
             <img src="images/dikepaul.png" alt="Dike Paul L.">
             <h5>Dike Paul L.</h5>
-            <p>Founder/Managing Director</p>
+            <p>Founder/Chief Executive Officer</p>
             <div class="social_box">
               <a href="https://www.facebook.com/share/1F7wYyxLhs/"><i class="fa fa-facebook"></i></a>
               <a href="https://x.com/DikePaul_?t=TO4unki3xJoNRwt8ZDYSQQ&s=09"><i class="fa fa-twitter"></i></a>
@@ -297,23 +259,9 @@
           <div class="team-card">
             <img src="images/gracephilip.png" alt="Effiong Philip">
             <h5>Effiong Philip</h5>
-            <p>Head of Human Resources</p>
+            <p>Advisor & Internal analysis</p>
             <div class="social_box">
               <a href="https://www.facebook.com/share/16NRZGXzaf/"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Team Member 3 -->
-        <div class="swiper-slide">
-          <div class="team-card">
-            <img src="images/sfaret logo.png" alt="Stella Fame">
-            <h5>Stella Fame</h5>
-            <p>Head of Sales & Marketing</p>
-            <div class="social_box">
-              <a href="https://www.facebook.com/share/1EL4EdEJPD/"><i class="fa fa-facebook"></i></a>
               <a href="#"><i class="fa fa-twitter"></i></a>
               <a href="#"><i class="fa fa-linkedin"></i></a>
             </div>
@@ -325,7 +273,7 @@
           <div class="team-card">
             <img src="images/sfaret logo.png" alt="Tech Head">
             <h5>Tech Team Lead</h5>
-            <p>Technology Development</p>
+            <p>Project Technology Development</p>
             <div class="social_box">
               
             </div>
@@ -337,7 +285,7 @@
           <div class="team-card">
             <img src="images/Daniel_Alucard.png" alt="Nnaji Daniel">
             <h5>Nnaji Daniel</h5>
-            <p>Back-End Engineer</p>
+            <p>Infastructure Technologies / Back-End Engineer</p>
             <div class="social_box">
               <a href="#"><i class="fa fa-facebook"></i></a>
               <a href="#"><i class="fa fa-twitter"></i></a>
@@ -351,7 +299,7 @@
           <div class="team-card">
             <img src="images/Faith_Ndenu.png" alt="Faith Ndenu">
             <h5>Faith Ndenu</h5>
-            <p>Front-End Engineer</p>
+            <p>Infastructure Technologies / Full-Stack Engineer</p>
             <div class="social_box">
               <a href="#"><i class="fa fa-facebook"></i></a>
               <a href="#"><i class="fa fa-twitter"></i></a>
