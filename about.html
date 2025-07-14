@@ -203,23 +203,23 @@
     border: 1px solid #ccc;
     background: #f3f2f7;
     margin: 20px 0;
-    height: 100%;
+    block-size: 100%;
     text-align: center;
     border-radius: 8px;
   }
 
   .why_section .img-box img {
-    max-width: 50%;
-    margin-bottom: 15px;
+    max-inline-size: 50%;
+    margin-block-end: 15px;
   }
 
   .why_section .heading_container {
-    margin-bottom: 30px;
+    margin-block-end: 30px;
   }
 
   .why_section .btn-box {
     text-align: center;
-    margin-top: 20px;
+    margin-block-start: 20px;
   }
 </style>
 <!-- End Why Section -->
@@ -259,7 +259,7 @@
           <div class="team-card">
             <img src="images/gracephilip.png" alt="Effiong Philip">
             <h5>Effiong Philip</h5>
-            <p>Advisor & Internal analysis</p>
+            <p>Advisor & Internal Analysis</p>
             <div class="social_box">
               <a href="https://www.facebook.com/share/16NRZGXzaf/"><i class="fa fa-facebook"></i></a>
               <a href="#"><i class="fa fa-twitter"></i></a>
@@ -272,7 +272,7 @@
         <div class="swiper-slide">
           <div class="team-card">
             <img src="images/sfaret logo.png" alt="Tech Head">
-            <h5>Tech Team Lead</h5>
+            <h5>Technical Team</h5>
             <p>Project Technology Development</p>
             <div class="social_box">
               
@@ -285,7 +285,7 @@
           <div class="team-card">
             <img src="images/Daniel_Alucard.png" alt="Nnaji Daniel">
             <h5>Nnaji Daniel</h5>
-            <p>Infastructure Technologies / Back-End Engineer</p>
+            <p>Backend Developer / Engineer</p>
             <div class="social_box">
               <a href="#"><i class="fa fa-facebook"></i></a>
               <a href="#"><i class="fa fa-twitter"></i></a>
@@ -299,7 +299,7 @@
           <div class="team-card">
             <img src="images/Faith_Ndenu.png" alt="Faith Ndenu">
             <h5>Faith Ndenu</h5>
-            <p>Infastructure Technologies / Full-Stack Engineer</p>
+            <p>Full-Stack Developer/Engineer</p>
             <div class="social_box">
               <a href="#"><i class="fa fa-facebook"></i></a>
               <a href="#"><i class="fa fa-twitter"></i></a>
@@ -346,8 +346,8 @@
 <!-- Style Fix -->
 <style>
   .team-card {
-    width: 100%;
-    max-width: 300px;
+    inline-size: 100%;
+    max-inline-size: 300px;
     background: #302e2e;
     border-radius: 12px;
     padding: 20px;
@@ -358,11 +358,11 @@
   }
 
   .team-card img {
-    width: 100%;
-    height: 280px;
+    inline-size: 100%;
+    block-size: 280px;
     object-fit: cover;
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin-block-end: 15px;
   }
 
   .team-card h5 {
@@ -372,7 +372,7 @@
   }
 
   .team-card p {
-    margin-bottom: 10px;
+    margin-block-end: 10px;
     font-size: 0.9rem;
     color: #bbb;
   }
@@ -385,7 +385,7 @@
   }
 
   .swiper-button-next, .swiper-button-prev {
-    top: 40%;
+    inset-block-start: 40%;
   }
 </style>
 <!-- End Team Section -->
