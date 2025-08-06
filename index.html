@@ -77,8 +77,6 @@
               <li class="nav-item"><a class="nav-link" href="Product.html">Product</a></li>
               <li class="nav-item"><a class="nav-link" href="Ecosystem/index.html">Ecosystem</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
-                <li class="nav-item">
-                <a class="btn btn-primary" href="https://forms.gle/c93YXixfaX4xzptr5" target="_blank" style="margin-left:10px;">Join Waitlist</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -176,7 +174,6 @@
 </body>
 </html>
   </div>
-
   <!-- about section -->
 <section class="about_section layout_padding">
   <div class="container">
@@ -207,14 +204,14 @@
 <!-- CSS for the about section -->
 <style>
   .equal-image {
-    width: 100%; /* Responsive width */
-    height: 400px; /* Fixed height */
+    inline-size: 100%; /* Responsive width */
+    block-size: 400px; /* Fixed height */
     object-fit: cover; /* Ensures the image fits within the box without distortion */
   }
   
-  @media (max-width: 768px) {
+  @media (max-inline-size: 768px) {
     .equal-image {
-      height: 300px; /* Adjust height for smaller screens */
+      block-size: 300px; /* Adjust height for smaller screens */
     }
   }
 </style>
@@ -267,7 +264,7 @@
   border-radius: 10px;
   margin: 10px;
   padding: 20px;
-  width: 300px;
+  inline-size: 300px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 </style>
@@ -318,8 +315,8 @@
   }
 
   .swiper-container {
-    width: 100%;
-    height: auto;
+    inline-size: 100%;
+    block-size: auto;
   }
 
   .swiper-wrapper {
@@ -334,8 +331,8 @@
   }
 
   .video-card {
-    width: 100%;
-    max-width: 500px;
+    inline-size: 100%;
+    max-inline-size: 500px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
@@ -344,23 +341,23 @@
 
   .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
+    padding-block-end: 56.25%; /* 16:9 aspect ratio */
+    block-size: 0;
     overflow: hidden;
-    max-width: 100%;
+    max-inline-size: 100%;
   }
 
   .video-container iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
     border-radius: 10px;
   }
 
   h3 {
-    margin-top: 10px;
+    margin-block-start: 10px;
     font-size: 18px;
     font-weight: bold;
   }
@@ -379,87 +376,51 @@
 </script>
 <!-- End of Video Slider -->
 
-<!-- Ads Popup Container -->
-<div id="popup" class="popup-overlay">
-  <div class="popup-content">
-    <span class="close-btn" onclick="closePopup()">&times;</span>
-    <img src="images/nonpresale.png" alt="Update" class="popup-img" />
-    <p><strong>✨ Sign Up & Join the Movement!</strong><br>Be part of the future of Edu-Tech with SFARET Technologies.</p>
-    <a href="https://forms.gle/c93YXixfaX4xzptr5" class="popup-btn" target="_blank">Join Waitlist</a>
-  </div>
-</div>
+<!-- Popup Countdown for Private Presale -->
+			<div id="presale-popup" style="display:none; position:fixed; inset:0; background:rgba(224, 216, 216, 0.55); z-index:9999; align-items:center; justify-content:center;">
+				<div style="background:#2626ea; padding:32px 24px; border-radius:12px; max-inline-size:350px; text-align:center; position:relative; box-shadow:0 8px 32px rgba(0,0,0,0.18);">
+					<button id="close-presale-popup" style="position:absolute; top:12px; right:12px; background:none; border:none; font-size:1.5rem; cursor:pointer;">&times;</button>
+					<h2 style="margin-block-end:8px;">Private Presale Countdown</h2>
+					<p style="margin-block-end:16px;">Private Presale starts <strong>August 20, 2025</strong><br>and runs till <strong>July 21, 2026</strong></p>
+					<div id="presale-countdown" style="font-size:1.25rem; font-weight:600; letter-spacing:1px; margin-block-end:8px;"></div>
+          <small style="color:#888888;">Be among the first to join!</small>
+          <br>
+          <button style="margin-top:16px; background:#1abc9c; color:#fff; border:none; padding:10px 24px; border-radius:6px; font-size:1em; cursor:pointer;" onclick="window.location.href='Ecosystem/index.html'">
+            Get Started
+          </button>
+				</div>
+			</div>
+			<script>
+			(function() {
+				const popup = document.getElementById('presale-popup');
+				const closeBtn = document.getElementById('close-presale-popup');
+				const countdown = document.getElementById('presale-countdown');
+				const presaleStart = new Date('2025-08-20T00:00:00Z');
+				const presaleEnd = new Date('2026-07-21T23:59:59Z');
 
-<style>
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.popup-overlay.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup-content {
-  background: #fff;
-  padding: 20px;
-  max-width: 350px;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  position: relative;
-}
-
-.popup-img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.popup-btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #5b5bd6;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-.close-btn {
-  position: absolute;
-  top: 8px;
-  right: 14px;
-  font-size: 24px;
-  cursor: pointer;
-}
-</style>
-
-<script>
-function closePopup() {
-  document.getElementById("popup").classList.remove("active");
-}
-
-// Show the popup after 1 second on page load
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    document.getElementById("popup").classList.add("active");
-  }, 1000);
-});
-</script>
-<!-- End of Ads Popup Container -->
+				function updateCountdown() {
+					const now = new Date();
+					if (now < presaleStart) {
+						const diff = presaleStart - now;
+						const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+						const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+						const mins = Math.floor((diff / (1000 * 60)) % 60);
+						const secs = Math.floor((diff / 1000) % 60);
+						countdown.textContent = `${days}d ${hours}h ${mins}m ${secs}s`;
+					} else if (now >= presaleStart && now <= presaleEnd) {
+						countdown.textContent = "Presale is LIVE!";
+					} else {
+						countdown.textContent = "Presale has ended.";
+					}
+				}
+				// Show popup after 2 seconds
+				setTimeout(() => { popup.style.display = 'flex'; }, 2000);
+				closeBtn.onclick = () => { popup.style.display = 'none'; };
+				updateCountdown();
+				setInterval(updateCountdown, 1000);
+			})();
+			</script>
+			<!-- end Popup Countdown for Private Presale -->
 
 <!-- SFARET Product Ecosystem Section -->
 <section class="portfolio-section">
@@ -531,20 +492,20 @@ window.addEventListener("load", () => {
 
   .portfolio-section h1 {
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-block-end: 20px;
   }
 
   .portfolio-section p {
     font-size: 1.2em;
-    margin-bottom: 30px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-block-end: 30px;
+    max-inline-size: 800px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
   }
 
   .portfolio-content {
-    width: 90%;
-    max-width: 1200px;
+    inline-size: 90%;
+    max-inline-size: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -556,8 +517,8 @@ window.addEventListener("load", () => {
     background-size: cover;
     background-position: center;
     border-radius: 12px;
-    width: 45%;
-    min-height: 100px;
+    inline-size: 45%;
+    min-block-size: 100px;
     position: relative;
     overflow: hidden;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
@@ -567,7 +528,7 @@ window.addEventListener("load", () => {
 
   .overlay {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-    width: 100%;
+    inline-size: 100%;
     padding: 20px;
     text-align: center;
   }
@@ -575,7 +536,7 @@ window.addEventListener("load", () => {
 .product-card h2 {
   color: white; /* Ensure headings are visible */
   font-size: 1.5em;
-  margin-bottom: 10px;
+  margin-block-end: 10px;
 }
 
 .popup {
@@ -584,7 +545,7 @@ window.addEventListener("load", () => {
 
   .learn-btn {
     font-size: 0.75em;
-    margin-left: 10px;
+    margin-inline-start: 10px;
     background: #1abc9c;
     border: none;
     color: white;
@@ -600,7 +561,7 @@ window.addEventListener("load", () => {
 
   .popup {
     display: none;
-    margin-top: 15px;
+    margin-block-start: 15px;
     background: rgba(255, 255, 255, 0.15);
     padding: 15px;
     border-radius: 8px;
@@ -613,9 +574,9 @@ window.addEventListener("load", () => {
     margin: 0;
   }
 
-  @media (max-width: 768px) {
+  @media (max-inline-size: 768px) {
     .product-card {
-      width: 100%;
+      inline-size: 100%;
     }
   }
 </style>
@@ -659,14 +620,14 @@ window.addEventListener("load", () => {
         }
 
         .container {
-            width: 80%;
+            inline-size: 80%;
             margin: 0 auto;
             text-align: center;
         }
 
         h2 {
             font-size: 2.5em;
-            margin-bottom: 30px;
+            margin-block-end: 30px;
             color: #b1abab;
         }
 
@@ -682,7 +643,7 @@ window.addEventListener("load", () => {
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            inline-size: 300px;
             overflow: hidden;
             transition: transform 0.3s;
         }
@@ -701,7 +662,7 @@ window.addEventListener("load", () => {
 
         .card-header i {
             font-size: 2em;
-            margin-bottom: 10px;
+            margin-block-end: 10px;
         }
 
         .card-body {
@@ -716,7 +677,7 @@ window.addEventListener("load", () => {
         }
 
         /* Responsive Design */
-        @media (max-width: 768px) {
+        @media (max-inline-size: 768px) {
             .card-container {
                 grid-template-columns: 1fr;
             }
@@ -819,18 +780,18 @@ body {
   }
   .portfolio-section h1 {
       font-size: 2.5em;
-      margin-bottom: 20px;
+      margin-block-end: 20px;
   }
   .portfolio-section p {
       font-size: 1.2em;
-      margin-bottom: 30px;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
+      margin-block-end: 30px;
+      max-inline-size: 800px;
+      margin-inline-start: auto;
+      margin-inline-end: auto;
   }
   .portfolio-content {
-      width: 90%;
-      max-width: 1200px;
+      inline-size: 90%;
+      max-inline-size: 1200px;
       margin: 0 auto;
       display: flex;
       justify-content: space-around;
@@ -842,16 +803,16 @@ body {
   color: white; /* Explicit text color */
   border-radius: 10px;
   padding: 20px;
-  width: 45%;
-  margin-bottom: 20px;
+  inline-size: 45%;
+  margin-block-end: 20px;
 }
   .card h2 {
       font-size: 1.8em;
-      margin-bottom: 15px;
+      margin-block-end: 15px;
   }
   .card p {
       font-size: 1em;
-      margin-bottom: 20px;
+      margin-block-end: 20px;
       line-height: 1.6;
   }
   .card a {
@@ -878,7 +839,7 @@ body {
           }
           .sponsors-section h2 {
               font-size: 24px;
-              margin-bottom: 20px;
+              margin-block-end: 20px;
           }
           .slider-container {
               overflow: hidden;
@@ -889,7 +850,7 @@ body {
               animation: slide 20s linear infinite;
           }
           .slider img {
-              height: 60px;
+              block-size: 60px;
               margin: 0 20px;
               vertical-align: middle;
               transition: transform 0.3s ease-in-out;
@@ -981,7 +942,7 @@ body {
 
 .announcement-section h2 {
   font-size: 2em;
-  margin-bottom: 20px;
+  margin-block-end: 20px;
   color: #150e3d;
 }
 
@@ -990,7 +951,7 @@ body {
   background: #ffffff;
   border-radius: 15px;
   padding: 20px;
-  max-width: 750px;
+  max-inline-size: 750px;
   margin: 0 auto;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   overflow: hidden;
@@ -1016,7 +977,7 @@ body {
 
 .announcement-item h3 {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-block-end: 10px;
 }
 
 .announcement-item p {
@@ -1030,8 +991,8 @@ body {
 }
 
 .info_social img {
-  width: 40px;
-  height: 40px;
+  inline-size: 40px;
+  block-size: 40px;
   transition: 0.3s;
 }
 
@@ -1041,7 +1002,7 @@ body {
 
 .prev-btn, .next-btn {
   position: absolute;
-  top: 50%;
+  inset-block-start: 50%;
   transform: translateY(-50%);
   background: #240361;
   color: #fff;
@@ -1053,8 +1014,8 @@ body {
   z-index: 2;
 }
 
-.prev-btn { left: -30px; }
-.next-btn { right: -30px; }
+.prev-btn { inset-inline-start: -30px; }
+.next-btn { inset-inline-end: -30px; }
 
 .prev-btn:hover, .next-btn:hover {
   background: #444;
@@ -1065,8 +1026,8 @@ body {
     padding: 15px;
   }
   .prev-btn, .next-btn {
-    left: -15px;
-    right: -15px;
+    inset-inline-start: -15px;
+    inset-inline-end: -15px;
   }
 }
 </style>
@@ -1151,7 +1112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     text-align: center;
     position: relative;
     z-index: 1;
-    width: 100%;
+    inline-size: 100%;
     box-sizing: border-box;
   }
 
@@ -1159,25 +1120,25 @@ document.addEventListener('DOMContentLoaded', () => {
     content: '';
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 50%;
     z-index: -1;
   }
 
   .community-section h1 {
     font-size: 2.5em;
     color: #1abc9c;
-    margin-bottom: 20px;
+    margin-block-end: 20px;
   }
 
   .community-section p {
     font-size: 1.2em;
-    margin-bottom: 40px;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-block-end: 40px;
+    max-inline-size: 500px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
     color: #f0f0f0;
   }
 
@@ -1201,7 +1162,7 @@ document.addEventListener('DOMContentLoaded', () => {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin-top: 40px;
+    margin-block-start: 40px;
     flex-wrap: wrap;
   }
 
@@ -1210,15 +1171,15 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   .community-section .community-details img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 15px;
+    inline-size: 60px;
+    block-size: 60px;
+    margin-block-end: 15px;
   }
 
   .community-section .community-details h3 {
     color: #fff;
     font-size: 1.25em;
-    margin-bottom: 10px;
+    margin-block-end: 10px;
   }
 
   .community-section .community-details p {
@@ -1227,7 +1188,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* Responsive Design */
-  @media (max-width: 450px) {
+  @media (max-inline-size: 450px) {
     .community-section {
       padding: 40px 20px;
     }
@@ -1238,7 +1199,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     .community-section .community-details div {
-      margin-top: 20px;
+      margin-block-start: 20px;
     }
   }
 </style>
@@ -1322,22 +1283,22 @@ document.addEventListener('DOMContentLoaded', () => {
     display: none;
     position: fixed;
     z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
     background-color: rgba(0,0,0,0.5);
   }
   /* Modal content box */
   .modal-content {
     background-color: white;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
-    max-width: 500px;
-    height: 450px;
+    inline-size: 50%;
+    max-inline-size: 500px;
+    block-size: 450px;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -1346,8 +1307,8 @@ document.addEventListener('DOMContentLoaded', () => {
   /* Close button */
   .close {
     position: absolute;
-    right: 15px;
-    top: 10px;
+    inset-inline-end: 15px;
+    inset-block-start: 10px;
     font-size: 24px;
     cursor: pointer;
   }
