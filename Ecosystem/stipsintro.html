@@ -18,14 +18,14 @@
 					<div class="brand header-brand">
 						<h1 class="m-0">
 							<a href="#">
-								<img class="header-logo-image" src="dist/images/sfaret logo.png" alt="Sfaret Technologies Logo" style="width:40px; height:40px; object-fit:contain; border-radius:8px;">
+								<img class="header-logo-image" src="dist/images/sfaret logo.png" alt="Sfaret Technologies Logo" style="inline-size:40px; block-size:40px; object-fit:contain; border-radius:8px;">
 							</a>
 						</h1>
 					</div>
+					<a href="/Ecosystem/index.html" class="button button-primary" style="padding:10px 24px; font-size:16px; border-radius:5px; text-decoration:none; background:#28a745; color:#fff; border:none; pointer-events:auto; z-index:10; position:relative;">Home</a>
 				</div>
 			</div>
 		</header>
-
 		<main>
 			<!-- S-TIPS Hero Section -->
 			<section class="hero">
@@ -77,7 +77,7 @@
 						<div class="product-block">
 							<h3 class="product-title">🎓 S-TIPS</h3>
 							<h4 class="product-subtitle">Student-Tailored Interactive Platform for Support</h4>
-							<div style="font-size: 0.9em; color: #888; margin-top: -0.5em; margin-bottom: 1em;">(Under Development)</div>
+							<div style="font-size: 0.9em; color: #888; margin-block-start: -0.5em; margin-block-end: 1em;">(Under Development)</div>
 							<p>
 								S-TIPS is our full-scale, AI-powered academic ecosystem built to transform how students learn, how educators teach, and how institutions operate. It offers a personalized digital assistant for students, a powerful dashboard for teachers, and an integrated virtual assistant marketplace.
 							</p>
@@ -105,7 +105,7 @@
 						<!-- STIPs Lite -->
 						<div class="product-block">
 							<h3 class="product-title">🧠 STIPs Lite (E-Task Edition)</h3>
-							<h4 class="product-subtitle">Simplified, Open, and Launching Soon</h4>
+							<h4 class="product-subtitle">Simplified, Open, and Launched and Testing</h4>
 							<p>
 								STIPs Lite is a lightweight, open-source platform designed to make smart task management and AI academic assistance accessible to all especially underserved communities, self-learners, freelancers, and small educational hubs like cybercafés and business centers.
 							</p>
@@ -124,7 +124,7 @@
 								<li>Designed for students, virtual assistants, shop owners, and learning centers</li>
 							</ul>
 							<p>
-								<em>Launching in the next 2 months  with early access for contributors</em>
+								<em>Launched and Testing with early access for contributors</em>
 							</p>
 						</div>
 					</div>
@@ -135,7 +135,7 @@
 				<div class="container">
 					<div class="section-header text-center">
 						<h2 class="section-title mt-0">Why S-TIPS Matters for Africa</h2>
-						<ul style="list-style: disc; text-align: left; max-width: 500px; margin: 1em auto 0 auto;">
+						<ul style="list-style: disc; text-align: start; max-inline-size: 500px; margin: 1em auto 0 auto;">
 							<li>Smart learning for students with limited resources</li>
 							<li>Digital access to academic management tools</li>
 							<li>Customizable for local and global institutions</li>
@@ -153,14 +153,18 @@
 							Join our presale, be among the first to access our tech, and help us build something the world truly needs.
 						</p>
 						<div class="cta-cta">
-							<a class="button button-primary button-wide-mobile blink" href="index.html">Join Now</a>
+							<a class="button button-primary button-wide-mobile glow" href="index.html">Join Now</a>
 							<style>
-							.blink {
-								animation: blink-animation 1s steps(2, start) infinite;
+							.glow {
+								box-shadow: 0 0 16px 4px #28a745, 0 0 32px 8px #28a74555;
+								animation: glowPulse 1.5s infinite alternate;
 							}
-							@keyframes blink-animation {
+							@keyframes glowPulse {
+								from {
+									box-shadow: 0 0 16px 4px #28a745, 0 0 32px 8px #28a74555;
+								}
 								to {
-									visibility: hidden;
+									box-shadow: 0 0 32px 8px #28a745, 0 0 48px 16px #28a74533;
 								}
 							}
 							</style>
@@ -176,7 +180,7 @@
 				<div class="site-footer-inner">
 					<div class="brand footer-brand">
 						<a href="#">
-							<img class="header-logo-image" src="dist/images/sfaret logo.png" alt="Sfaret Technologies Logo" style="width:40px; height:40px; object-fit:contain; border-radius:8px;">
+							<img class="header-logo-image" src="dist/images/sfaret logo.png" alt="Sfaret Technologies Logo" style="inline-size:40px; block-size:40px; object-fit:contain; border-radius:8px;">
 						</a>
 					</div>
 					<ul class="footer-links list-reset">
