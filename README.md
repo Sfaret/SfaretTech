@@ -1,4 +1,5 @@
-# SfaretTech
-We are Edu-tech Startups company we are here to revitlize the educational sector, and this is our official
-webpage in the following year.
-thank you!!
+# Firebase Studio
+
+This is a NextJS starter in Firebase Studio.
+
+To get started, take a look at src/app/page.tsx.
